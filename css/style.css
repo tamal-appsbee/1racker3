@@ -203,7 +203,7 @@ header .container-fluid .row {position: fixed; width: 1440px; background: #fff; 
 
 .how_to_get .content_part a img {width:200px;}
 
-.map_img_sec { position:relative; height:660px; overflow:hidden;}
+.map_img_sec { position:relative; height:660px; overflow:hidden; background: #000;}
 .profile_img { position: absolute; right: 0; height: 660px;}
 .profile_img img {height: 660px; width: 730px;}
 .map_img_sec img.map_section {height: 660px; margin-left: -131px;}
