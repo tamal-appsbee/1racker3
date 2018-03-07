@@ -1,0 +1,265 @@
+<!doctype html>
+<html>
+<head>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!-->
+
+<!--<![endif]-->
+<!--[if lt IE 9]>
+<script type="text/javascript" >
+document.createElement("nav" );
+document.createElement("header" );
+document.createElement("footer" );
+document.createElement("section" );
+document.createElement("aside" );
+document.createElement("article" );
+</script>
+<![endif]-->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>TrackerEye</title>
+<link rel="shortcut icon" type="images/x-icon" href="images/favicon.ico"/>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+<link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+<link href="css/style.css" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Montserrat:200,300,400,500i,600,700,800,900" rel="stylesheet">
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/materialize.min.js"></script>
+<script type="text/javascript">
+jQuery(document).ready(function(){
+	var catTopPosition = jQuery('#cat').offset().top;
+	jQuery('#scroll').click(function(){
+		jQuery('html, body').animate({scrollTop:catTopPosition}, 'slow');
+		return false;
+	});
+});
+</script>
+</head>
+
+<body>
+<header>
+<div class="container-fluid">
+  <div class="row">
+  <div class="col s12">
+  		<div class="col s2"><a href="#" class="logo"><img src="images/logo.png" alt=""></a></div>
+      	<div class="col s7 nav-wrapper">
+        <ul class="menu_main">
+        <li class="position_drop"><a class='dropdown-button' href="#" data-activates='dropdown2'>Fiber Cities <i class="material-icons">expand_more</i></a>
+        <!-- Dropdown Structure -->
+        <ul id='dropdown2' class='dropdown-content'>
+        <li><a href="#!">Link 1</a></li>
+        <li><a href="#!">Link 2</a></li>
+        <li><a href="#!">Link 3</a></li>
+        </ul>
+        </li>
+        <li><a href="#">Why Speed Matters</a></li>
+        <li><a href="#">Community Impact</a></li>
+        <li><a href="#">Support</a></li>
+        </ul>
+        </div>
+        <div class="col s3">
+        <ul class="pull-right">
+        <li class="eligibility_but"><a href="#">Check eligibility</a></li>
+        <li> <a class='dropdown-button' href="#" data-activates='dropdown1'><i class="material-icons">account_circle</i> Sign in</a></li>
+        </ul>
+        </div>
+        
+        <!-- Dropdown Structure -->
+        <ul id='dropdown1' class='dropdown-content'>
+        <li class="profile_text">Jack shon<br/><span>jack@gmail.com</span></li>
+        <li><a href="#!">Manage Account</a></li>
+        <li><a href="#!">Switch Account</a></li>
+        <li class="divider"></li>
+        <li><a href="#!">Privacy</a></li>
+        <li><a href="#!">Sign Out</a></li>
+        </ul>
+  </div>
+  </div>
+  
+</div>
+</header>
+
+<aside class="container-fluid banner_section">
+<section>
+	<div class="row">
+    <div class="col s12">
+    	<div class="map_img_sec">
+        <figure class="down_arrow"><a href="#" id="scroll"><img src="images/downbutton.png" alt=""></a></figure>
+    	<div class="profile_img"><img src="images/banner01.png" alt=""></div>
+        <img src="images/animation_4.gif" alt="" class="map_section">
+        </div>
+		
+    </div>
+    </div>
+    
+    <div class="row">
+    <div class="col s12">
+		<div class="col s6">
+        <div class="content_part">
+        <h2>Faster</h2>
+        <h3>We provide Tracking of things</h3>
+        <ul class="benefits-group_list">
+          <li class="benefits-group_item">
+            <h5 class="benefits-group_title">You can track anything with the platform.</h5>
+            <p class="benefits-group_description">
+                <span class="orphan-removal">With intelligent tracking, you can get control of anything, starting from your vehicle to your kids or even small items like your wallet. We provide array of solutions for tracking large to small items and manage the data effectively.</span>
+            </p>
+          </li>
+          <li class="benefits-group_item">
+            <h5 class="benefits-group_title">Communicate while you track.</h5>
+            <p class="benefits-group_description">
+                <span class="orphan-removal">The application provides effective way to communicate with other people connected with you over the platform. So you can connect with your driver or your kid through the platform and communicate through it while you track them.</span>
+            </p>
+          </li>
+          <li class="benefits-group_item">
+            <h5 class="benefits-group_title">Define routs.</h5>
+            <p class="benefits-group_description">
+                <span class="orphan-removal">You can define routs for each of the connected devices. The intelligent alarm system will send you push and sms alert based on your choice.</span>
+            </p>
+          </li>
+        </ul>
+       </div>
+        
+        </div>
+    	<div class="col s6 app_img">
+        <div class="content_part">
+        <img src="images/about_mob.png" alt="">
+        </div>
+        </div>
+    </div>
+    </div>
+    
+    
+    <div class="row">
+    <div class="col s12">
+		<div class="col s6">
+        <div class="content_part">
+        <h2>KINDER</h2>
+        <h3>We care.</h3>
+        <ul class="benefits-group_list">
+          <li class="benefits-group_item">
+            <h5 class="benefits-group_title">Sensitive tracking data will be stored in blockchain.</h5>
+            <p class="benefits-group_description">This is the first platform which stores your sensitive tracking data into blockchain. So this distributed data cannot be modified even by most influential people on the earth.</p>
+          <a href="#" class="line">LEARN MORE</a>
+          </li>
+          <li class="benefits-group_item">
+            <h5 class="benefits-group_title">Award-winning customer service.</h5>
+            <p class="benefits-group_description">
+                <span class="orphan-removal">From friendly, knowledgeable staff to exact-time service appointments, you’ll enjoy our award-winning 24/7 chat service any time you need it.</span>
+            </p>
+          </li>
+        </ul>
+       </div>
+        
+        </div>
+    	<div class="col s6"><img src="images/unnamed (1).png" alt=""></div>
+    </div>
+    </div>
+    
+    <div class="row">
+    <div class="col s12">
+    <img src="images/gps-fleet-tracking.jpg" alt="">
+    </div>
+    </div>
+    
+    
+    <div class="row gray_light_sec">
+    <div class="col s12">
+    <div class="content_part">
+    <h3 class="center">Track better, stay safe, increase profit</h3>
+    <div class="col s4">
+    <h5>Cloud & Blockchain data storage</h5>
+	<p>The tracking data can be made available anywhere and anytime you want. Based on your choice, we can keep the data in encrypted cloud server or in blockchain.</p>
+    </div>
+    <div class="col s4">
+    <h5>Multi-device support</h5>
+	<p>Track with your phone, computer and tablet devices. On the other end you can track things with all list of specified devices compatible with our application.</p>
+    </div>
+    <div class="col s4">
+    <h5>Increase profitability</h5>
+	<p>If you are managing a fleet of cars or managing large logistics for any delivery, track them better and increase profitability.</p>
+    </div>
+    </div>
+    </div>
+    </div>
+    
+    
+    <div class="row how_to_get">
+    <div class="col s12">
+    <div class="content_part">
+    <h3 class="center">How to get Traker Eyes</h3>
+    <div class="col s4">
+    <img src="images/how_get_mob.png" alt="">
+    </div>
+    <div class="col s4 center">
+    <h5 class="font24">Get Traker Eyes App<br/>
+	<span>Get app over Smartphones</span></h5>
+	<a href="#"><img src="images/google-play-button.png" alt=""></a>
+    </div>
+    <div class="col s4 position_img">
+    &nbsp;
+    <img src="images/how_get_mob2.png" alt="">
+    </div>
+    </div>
+    </div>
+    </div>
+    
+    
+</section>
+</aside>
+
+<footer>
+<aside class="container-fluid">
+<section class="global_footer">
+
+    <div class="global_footer__container">
+    <div class="global_footer__section">
+    <div class="global_footer__section__title">Get Fiber</div>
+    <ul class="global_footer__group">
+    <li class="global_footer_item"><a href="/">Residential service</a>
+    </li><li class="global_footer_item"><a href="/">Small business</a>
+    </li><li class="global_footer_item"><a href="/">Property managers</a>
+    </li></ul>
+    </div>
+    <div class="global_footer__section">
+    <div class="global_footer__section__title">Explore</div>
+    <ul class="global_footer__group">
+    <li class="global_footer_item"><a href="/">Why speed matters</a>
+    </li><li class="global_footer_item"><a href="/">Community impact</a>
+    </li><li class="global_footer_item"><a href="/">Expansion plans</a>
+    </li></ul>
+    </div>
+    <div class="global_footer__section">
+    <div class="global_footer__section__title">About</div>
+    <ul class="global_footer__group">
+    <li class="global_footer_item"><a href="/">Blog</a>
+    </li><li class="global_footer_item"><a href="/">Careers</a>
+    </li><li class="global_footer_item"><a href="/">Privacy &amp; Terms</a>
+    </li><li class="global_footer_item"><a href="/">Support</a>
+    </li></ul>
+    </div>
+    <div class="global_footer__section">
+    <div class="global_footer__section__title">Social Media</div>
+    <ul class="global_footer__group">
+    <li class="global_footer_item"><a href="/">Google+</a>
+    </li><li class="global_footer_item"><a href="/">Facebook</a>
+    </li><li class="global_footer_item"><a href="/">Twitter</a>
+    </li><li class="global_footer_item"><a href="/">YouTube</a>
+    </li></ul>
+    </div>
+    <div class="global_footer__section">
+    <div class="global_footer__section__title">Translate</div>
+    <ul class="global_footer__group">
+    <li class="global_footer_item"><a href="/">Español</a>
+    </li></ul>
+    </div>
+    </div>
+
+</section>
+</aside>
+</footer>
+</body>
+</html>
