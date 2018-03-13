@@ -68,6 +68,7 @@ i {vertical-align: middle;}
 .container-fluid .col { padding:0; margin:0;}
 header .col ul li { display:inline-block;}
 header .col ul li a {text-align: center; padding: 13px 0px 0px; margin: 0px 10px 10px; font-size:13px; color:#616161; text-decoration:none; position:relative;}
+header .col ul li a:hover { color:#1ea181;}
 header .dropdown-content {min-width: 172px !important; top: 70px !important; left: 88.1% !important;}
 header .dropdown-content li { text-align:left!important; padding:5px 10px!important; margin:0!important;min-height: inherit; font-size: 14px; color:#b3b3b3;}
 header .dropdown-content li a { text-align:left!important; margin:0!important; padding:0!important;}
@@ -136,7 +137,7 @@ header .container-fluid .row {position: fixed; width: 1440px; background: #fff; 
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 600;
 }
-.content_part h5 span {font-size: 14px; font-weight: 500;}
+.content_part h5 span {font-size: 14px; font-weight: 600; color:#2dbd9a;}
 .content_part h5.font24 {font-size: 24px;}
 .content_part p {
     font-size: 16px;
@@ -189,19 +190,18 @@ header .container-fluid .row {position: fixed; width: 1440px; background: #fff; 
 .global_footer__section {
     width: auto;
 }
-.global_footer_item a {
-    color: #fff;
-    opacity: .48;
-}
+.global_footer_item a {color: #fff; opacity: .48; height: 20px; overflow: hidden; display: inline-block;}
 
 .how_to_get .content_part { padding:80px 80px 0; position:relative; width: 100%;}
 .how_to_get .content_part .s4 {padding:0 15px;}
 .app_img img { width:85%; float: right;}
 .how_to_get .content_part img { width:300px;}
+.position_img {min-height: 396px;}
 .position_img img { position:absolute; right:80px; bottom:0; }
 .how_to_get .content_part h5 { text-align:center;}
 
-.how_to_get .content_part a img {width:200px;}
+.how_to_get .content_part a img {width:200px; transition: all 150ms ease;}
+.how_to_get .content_part a img:hover { opacity:0.6; }
 
 .map_img_sec { position:relative; height:660px; overflow:hidden; background: #000;}
 .profile_img { position: absolute; right: 0; height: 660px;}
@@ -212,7 +212,34 @@ header .container-fluid .row {position: fixed; width: 1440px; background: #fff; 
 header .position_drop .dropdown-content {min-width: 200px !important; top: 50px !important; left: 0 !important;}
 
 .down_arrow {position: absolute; z-index: 9; bottom: 0; padding: 0; margin: 0; left: 40px;}
-.map_img_sec video {margin-left: -132px;}
+/*.map_img_sec video {margin-left: -132px;}*/
+
+
+footer ul li a span {display: inline-block; position: relative; transition: transform 0.3s ease 0s;}
+footer ul li a span:before {content: attr(data-hover); position: absolute; top: 100%; transform: translate3d(0px, 0px, 0px); color:#39d2b8;}
+footer ul li a:hover span, footer ul li a:focus span {transform: translateY(-100%);}
+footer ul li a.active:hover span {transform: translateY(0px);}
+
+
+@-webkit-keyframes swinging{
+    0%{-webkit-transform: rotate(10deg);}
+    50%{-webkit-transform: rotate(-5deg)}
+    100%{-webkit-transform: rotate(10deg);}
+}
+ 
+@keyframes swinging{
+    0%{transform: rotate(10deg);}
+    50%{transform: rotate(-5deg)}
+    100%{transform: rotate(10deg);}
+}
+ 
+.swingimage{
+    -webkit-transform-origin: 50% 0;
+    transform-origin: 50% 0;
+    -webkit-animation: swinging 3.5s ease-in-out forwards infinite;
+    animation: swinging 3.5s ease-in-out forwards infinite;
+}
+
 
 
 @media only screen and (min-width: 320px) and (max-width: 480px) {

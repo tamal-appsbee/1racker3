@@ -24,9 +24,17 @@ document.createElement("article" );
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
 <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
 <link href="css/style.css" rel="stylesheet"/>
+<link href="css/aos.css" rel="stylesheet"/>
+<link href="css/animate.min.css" rel="stylesheet"/>
+<link href="css/animate(1).css" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Montserrat:200,300,400,500i,600,700,800,900" rel="stylesheet">
 <script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/aos.js"></script>
+<script type="text/javascript" src="js/animate.min.js"></script>
+<!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
 <script type="text/javascript" src="js/materialize.min.js"></script>
 <script type="text/javascript">
 jQuery(document).ready(function(){
@@ -36,6 +44,7 @@ jQuery(document).ready(function(){
 		return false;
 	});
 });
+
 </script>
 </head>
 
@@ -88,7 +97,7 @@ jQuery(document).ready(function(){
     <div class="col s12">
     	<div class="map_img_sec">
         <figure class="down_arrow"><a href="#" id="scroll"><img src="images/downbutton.png" alt=""></a></figure>
-    	<div class="profile_img"><img src="images/banner01.png" alt=""></div>
+    	<!--<div class="profile_img"><img src="images/banner01.png" alt=""></div>-->
         <video autoplay loop>
         <source src="images/animation_7.mp4" type="video/mp4">
         </video>
@@ -97,12 +106,14 @@ jQuery(document).ready(function(){
     </div>
     </div>
     
+    <div id="transcroller-body" class="aos-all">
+    
     <div class="row">
     <div class="col s12">
-		<div class="col s6">
-        <div class="content_part">
+		<div class="col s6 aos-item" data-aos="fade-up">
+        <div class="content_part aos-item__inner">
         <h2>Faster</h2>
-        <h3>We provide Tracking of things</h3>
+        <div class="well"><h3 class="demo2 text-danger">We provide Tracking of things</h3></div>
         <ul class="benefits-group_list">
           <li class="benefits-group_item">
             <h5 class="benefits-group_title">You can track anything with the platform.</h5>
@@ -126,21 +137,30 @@ jQuery(document).ready(function(){
        </div>
         
         </div>
-    	<div class="col s6 app_img">
-        <div class="content_part">
-        <img src="images/about_mob.png" alt="">
+    	<div class="col s6 app_img aos-item" data-aos="fade-down">
+        <div class="content_part aos-item__inner">
+        
+        <div class="wow zoomIn" data-wow-duration="1s" data-wow-offset="100" style="visibility: visible; animation-duration: 1s; animation-name: zoomIn;">
+        <div class="wow tada" data-wow-delay="1s" data-wow-duration="1s" style="visibility: visible; animation-duration: 1s; animation-delay: 1s; animation-name: tada;">
+        <div class="wow rubberBand" data-wow-delay="2000ms" data-wow-duration="1s" style="visibility: visible; animation-duration: 1s; animation-delay: 2000ms; animation-name: rubberBand;">
+        <div class="wow pulse animated" data-wow-delay="300ms" data-wow-iteration="infinite" data-wow-duration="2s" style="visibility: visible; animation-duration: 2s; animation-delay: 300ms; animation-iteration-count: infinite; animation-name: pulse;">
+        <a href="#"><img src="images/about_mob.png" alt=""></a>
+        </div>
+        </div>
+        </div>
+        </div>
+        
         </div>
         </div>
     </div>
     </div>
-    
     
     <div class="row">
     <div class="col s12">
-		<div class="col s6">
-        <div class="content_part">
+		<div class="col s6 aos-item" data-aos="zoom-out-down">
+        <div class="content_part aos-item__inner">
         <h2>KINDER</h2>
-        <h3>We care.</h3>
+        <div class="well"><h3 class="demo2 text-danger">We care.</h3></div>
         <ul class="benefits-group_list">
           <li class="benefits-group_item">
             <h5 class="benefits-group_title">Sensitive tracking data will be stored in blockchain.</h5>
@@ -157,21 +177,20 @@ jQuery(document).ready(function(){
        </div>
         
         </div>
-    	<div class="col s6"><img src="images/unnamed (1).png" alt=""></div>
+    	<div class="col s6 aos-item" data-aos="flip-down"><div class="aos-item__inner"><img src="images/unnamed (1).png" alt=""></div></div>
     </div>
     </div>
     
-    <div class="row">
-    <div class="col s12">
+    <div class="row aos-item" data-aos="fade-in">
+    <div class="col s12 aos-item__inner">
     <img src="images/gps-fleet-tracking.jpg" alt="">
     </div>
     </div>
     
-    
-    <div class="row gray_light_sec">
+    <div class="row gray_light_sec aos-item" data-aos="zoom-out-down">
     <div class="col s12">
-    <div class="content_part">
-    <h3 class="center">Track better, stay safe, increase profit</h3>
+    <div class="content_part aos-item__inner">
+    <div class="well"><h3 class="demo2 text-danger center">Track better, stay safe, increase profit</h3></div>
     <div class="col s4">
     <h5>Cloud & Blockchain data storage</h5>
 	<p>The tracking data can be made available anywhere and anytime you want. Based on your choice, we can keep the data in encrypted cloud server or in blockchain.</p>
@@ -188,30 +207,46 @@ jQuery(document).ready(function(){
     </div>
     </div>
     
-    
     <div class="row how_to_get">
     <div class="col s12">
     <div class="content_part">
-    <h3 class="center">How to get Traker Eyes</h3>
-    <div class="col s4">
+    <div class="col s3 aos-item" data-aos="zoom-out-down">
+    <div class="aos-item__inner">
     <img src="images/how_get_mob.png" alt="">
     </div>
-    <div class="col s4 center">
+    </div>
+    <div class="col s6 center aos-item" data-aos="flip-down">
+    <div class="aos-item__inner">
+    <div class="well"><h3 class="demo2 text-danger center">How to get Traker Eyes</h3></div>
     <h5 class="font24">Get Traker Eyes App<br/>
 	<span>Get app over Smartphones</span></h5>
-	<a href="#"><img src="images/google-play-button.png" alt=""></a>
+    
+        <div class="wow zoomIn" data-wow-duration="1s" data-wow-offset="100" style="visibility: visible; animation-duration: 1s; animation-name: zoomIn;">
+        <div class="wow tada" data-wow-delay="1s" data-wow-duration="1s" style="visibility: visible; animation-duration: 1s; animation-delay: 1s; animation-name: tada;">
+        <div class="wow rubberBand" data-wow-delay="2000ms" data-wow-duration="1s" style="visibility: visible; animation-duration: 1s; animation-delay: 2000ms; animation-name: rubberBand;">
+        <div class="wow pulse animated" data-wow-delay="300ms" data-wow-iteration="infinite" data-wow-duration="2s" style="visibility: visible; animation-duration: 2s; animation-delay: 300ms; animation-iteration-count: infinite; animation-name: pulse;">
+        <a href="#"><img src="images/google-play-button.png" alt=""></a>
+        </div>
+        </div>
+        </div>
+        </div>
+    
     </div>
-    <div class="col s4 position_img">
+    </div>
+    <div class="col s3 position_img aos-item" data-aos="zoom-out-down">
+    <div class="aos-item__inner">
     &nbsp;
     <img src="images/how_get_mob2.png" alt="">
     </div>
     </div>
     </div>
     </div>
-    
+    </div>
+    </div>
     
 </section>
 </aside>
+
 
 <footer>
 <aside class="container-fluid">
@@ -221,47 +256,55 @@ jQuery(document).ready(function(){
     <div class="global_footer__section">
     <div class="global_footer__section__title">Get Fiber</div>
     <ul class="global_footer__group">
-    <li class="global_footer_item"><a href="/">Residential service</a>
-    </li><li class="global_footer_item"><a href="/">Small business</a>
-    </li><li class="global_footer_item"><a href="/">Property managers</a>
-    </li></ul>
+    <li class="global_footer_item"><a href="/"><span data-hover="Residential service">Residential service</span></a></li>
+    <li class="global_footer_item"><a href="/"><span data-hover="Small business">Small business</span></a></li>
+    <li class="global_footer_item"><a href="/"><span data-hover="Property managers">Property managers</span></a></li>
+    </ul>
     </div>
     <div class="global_footer__section">
     <div class="global_footer__section__title">Explore</div>
     <ul class="global_footer__group">
-    <li class="global_footer_item"><a href="/">Why speed matters</a>
-    </li><li class="global_footer_item"><a href="/">Community impact</a>
-    </li><li class="global_footer_item"><a href="/">Expansion plans</a>
-    </li></ul>
+    <li class="global_footer_item"><a href="/"><span data-hover="Why speed matters">Why speed matters</span></a></li>
+    <li class="global_footer_item"><a href="/"><span data-hover="Community impact">Community impact</span></a></li>
+    <li class="global_footer_item"><a href="/"><span data-hover="Expansion plans">Expansion plans</span></a></li>
+    </ul>
     </div>
     <div class="global_footer__section">
     <div class="global_footer__section__title">About</div>
     <ul class="global_footer__group">
-    <li class="global_footer_item"><a href="/">Blog</a>
-    </li><li class="global_footer_item"><a href="/">Careers</a>
-    </li><li class="global_footer_item"><a href="/">Privacy &amp; Terms</a>
-    </li><li class="global_footer_item"><a href="/">Support</a>
-    </li></ul>
+    <li class="global_footer_item"><a href="/"><span data-hover="Blog">Blog</span></a>
+    </li><li class="global_footer_item"><a href="/"><span data-hover="Careers">Careers</span></a></li>
+    <li class="global_footer_item"><a href="/"><span data-hover="Privacy &amp; Terms">Privacy &amp; Terms</span></a></li>
+    <li class="global_footer_item"><a href="/"><span data-hover="Support">Support</span></a></li>
+    </ul>
     </div>
     <div class="global_footer__section">
     <div class="global_footer__section__title">Social Media</div>
     <ul class="global_footer__group">
-    <li class="global_footer_item"><a href="/">Google+</a>
-    </li><li class="global_footer_item"><a href="/">Facebook</a>
-    </li><li class="global_footer_item"><a href="/">Twitter</a>
-    </li><li class="global_footer_item"><a href="/">YouTube</a>
-    </li></ul>
+    <li class="global_footer_item"><a href="/"><span data-hover="Google+">Google+</span></a></li>
+    <li class="global_footer_item"><a href="/"><span data-hover="Facebook">Facebook</span></a></li>
+    <li class="global_footer_item"><a href="/"><span data-hover="Twitter">Twitter</span></a></li>
+    <li class="global_footer_item"><a href="/"><span data-hover="YouTube">YouTube</span></a></li>
+    </ul>
     </div>
     <div class="global_footer__section">
     <div class="global_footer__section__title">Translate</div>
     <ul class="global_footer__group">
-    <li class="global_footer_item"><a href="/">Español</a>
-    </li></ul>
+    <li class="global_footer_item"><a href="/"><span data-hover="Español">Español</span></a></li>
+    </ul>
     </div>
     </div>
 
 </section>
 </aside>
 </footer>
+<script>
+	AOS.init({
+	easing: 'ease-in-out-sine'
+	});
+	$(".demo2").animatext({speed: 150,
+    effect: 'flipInX',
+    infinite: true});
+</script>
 </body>
 </html>
