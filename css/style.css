@@ -67,7 +67,7 @@ i {vertical-align: middle;}
 .banner_section .row { margin-bottom:0;}
 .container-fluid .col { padding:0; margin:0;}
 header .col ul li { display:inline-block;}
-header .col ul li a {text-align: center; padding: 13px 0px 0px; margin: 0px 10px 10px; font-size:13px; color:#616161; text-decoration:none; position:relative;}
+header .col ul li a {text-align: center; padding: 13px 0px 0px; margin: 0px 10px 10px; font-size:14px; color:#616161; text-decoration:none; position:relative;}
 header .col ul li a:hover { color:#1ea181;}
 header .dropdown-content {min-width: 172px !important; top: 70px !important; left: 88.1% !important;}
 header .dropdown-content li { text-align:left!important; padding:5px 10px!important; margin:0!important;min-height: inherit; font-size: 14px; color:#b3b3b3;}
@@ -118,7 +118,7 @@ header i { color:#999;}
 .profile_text { font-size:12px!important; line-height:16px!important; color:#333!important; text-transform:uppercase!important;}
 .profile_text span { color:#2dbd9a!important; font-size:12px!important; padding: 0 !important; text-transform: none!important;}
 .eligibility_but a:hover { background: #2dbd9a; color: #fff !important; border: 1px solid #2dbd9a;}
-header .container-fluid .row {position: fixed; width: 1440px; background: #fff; border-bottom: 1px solid #eee; top: 0; z-index:99;}
+header .container-fluid .row {position: fixed; width: 1440px; background: #fff; border-bottom: 1px solid #f8f8f8; top: 0; z-index:99;}
 
 .banner_section { margin-top:70px;}
 .banner_section img { width:100%; float: left;}
@@ -192,9 +192,11 @@ header .container-fluid .row {position: fixed; width: 1440px; background: #fff; 
 }
 .global_footer_item a {color: #fff; opacity: .48; height: 20px; overflow: hidden; display: inline-block;}
 
+.we_care_main img {width: 600px; float: right; margin-top: 60px;}
+
 .how_to_get .content_part { padding:80px 80px 0; position:relative; width: 100%;}
 .how_to_get .content_part .s4 {padding:0 15px;}
-.app_img img { width:85%; float: right;}
+.app_img img { width:85%; float: right; margin-top: 80px;}
 .how_to_get .content_part img { width:300px;}
 .position_img {min-height: 396px;}
 .position_img img { position:absolute; right:80px; bottom:0; }
@@ -203,11 +205,13 @@ header .container-fluid .row {position: fixed; width: 1440px; background: #fff; 
 .how_to_get .content_part a img {width:200px; transition: all 150ms ease;}
 .how_to_get .content_part a img:hover { opacity:0.6; }
 
-.map_img_sec { position:relative; height:660px; overflow:hidden; background: #000;}
+.map_img_sec { position:relative; height:660px; overflow:hidden; background: #fff; border-bottom:1px solid #f8f8f8;}
+.map_img_sec h2 {font-size: 40px; font-weight: 600; width: 60%; padding: 100px; float: left; font-family: 'Montserrat', sans-serif; line-height: 50px; text-transform: uppercase;}
 .profile_img { position: absolute; right: 0; height: 660px;}
 .profile_img img {height: 660px; width: 730px;}
 .map_img_sec img.map_section {height: 660px; margin-left: -131px;}
 
+.phone_banner img { width:250px; float:left; margin-left: 150px; margin-top: 50px;}
 .position_drop { position:relative;}
 header .position_drop .dropdown-content {min-width: 200px !important; top: 50px !important; left: 0 !important;}
 
