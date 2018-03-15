@@ -53,7 +53,7 @@ jQuery(document).ready(function(){
 <div class="container-fluid">
   <div class="row">
   <div class="col s12">
-  		<div class="col s2"><a href="#" class="logo"><img src="images/logo.png" alt=""></a></div>
+  		<div class="col s2"><a href="home.html" class="logo"><img src="images/logo.png" alt=""></a></div>
       	<div class="col s7 nav-wrapper">
         <ul class="menu_main">
         <li class="position_drop"><a class='dropdown-button' href="#" data-activates='dropdown2'>Fiber Cities <i class="material-icons">expand_more</i></a>
@@ -96,8 +96,12 @@ jQuery(document).ready(function(){
 	<div class="row">
     <div class="col s12">
     	<div class="map_img_sec">
-        <div class="well"><h2 class="demo2 text-danger">We help you to track whatever is precious for you and Worlds first tracking platform that is using Blockchain to keep your sensitive data</h2></div>
-        <figure class="phone_banner"><img src="images/img_iphone_back.png" alt=""></figure>
+        <div class="well"><h2 class="demo3 text-danger"></h2><h2 class="demo8 text-danger"></h2></div>
+        
+        <video autoplay loop>
+        <source src="images/animation_112.mp4" type="video/mp4">
+        </video>
+        
         <figure class="down_arrow"><a href="#" id="scroll"><img src="images/downbutton.png" alt=""></a></figure>
     	<!--<div class="profile_img"><img src="images/banner01.png" alt=""></div>
         <video autoplay loop>
@@ -167,7 +171,7 @@ jQuery(document).ready(function(){
           <li class="benefits-group_item">
             <h5 class="benefits-group_title">Sensitive tracking data will be stored in blockchain.</h5>
             <p class="benefits-group_description">This is the first platform which stores your sensitive tracking data into blockchain. So this distributed data cannot be modified even by most influential people on the earth.</p>
-          <a href="#" class="line">LEARN MORE</a>
+          <a href="inner-page.html" class="line">LEARN MORE</a>
           </li>
           <li class="benefits-group_item">
             <h5 class="benefits-group_title">Award-winning customer service.</h5>
@@ -307,6 +311,36 @@ jQuery(document).ready(function(){
 	$(".demo2").animatext({speed: 150,
     effect: 'flipInX',
     infinite: true});
+	
+	$(function(){
+	var element_a = $(".demo3");
+    var element_b = $(".demo8");
+	var effect = 'flipInX';
+	var element_a_data = 'We help you to track whatever is precious for you';
+	var element_b_data = 'Worlds first tracking platform that is using Blockchain to keep your sensitive data';
+		
+	function animate_a(){
+		element_b.html('');
+		element_a.html(element_a_data);	
+		element_a.animatext({
+			speed: 300,
+		    effect: effect,
+			onSuccess: animate_b
+		});
+	}
+	
+	function animate_b(){
+		element_a.html('');
+		element_b.html(element_b_data);	
+		element_b.animatext({
+			speed: 300,
+		    effect: effect,
+			onSuccess: animate_a
+		});
+	}
+	animate_a();
+   });
+   
 </script>
 </body>
 </html>
