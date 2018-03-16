@@ -66,19 +66,23 @@ i {vertical-align: middle;}
 .container-fluid a { color:#2dbd9a;}
 .banner_section .row { margin-bottom:0;}
 .container-fluid .col { padding:0; margin:0;}
-header .col ul li { display:inline-block;}
-header .col ul li a {text-align: center; padding: 13px 0px 0px; margin: 0px 10px 10px; font-size:14px; color:#616161; text-decoration:none; position:relative;}
-header .col ul li a:hover { color:#1ea181;}
-header .dropdown-content {min-width: 172px !important; top: 70px !important; left: 88.1% !important;}
+header .col ul li { display:inline-block; line-height: 60px;}
+header .col ul li a {text-align: center; padding: 13px 0px 0px; line-height: 16px; margin: 0px 10px 10px; font-size:14px; color:#616161; text-decoration:none; position:relative;}
+header .col ul li a:hover { color:#1ea181; background:none;}
+header .dropdown-content {min-width: 172px !important; top: 70px !important; left: 85.6% !important;}
 header .dropdown-content li { text-align:left!important; padding:5px 10px!important; margin:0!important;min-height: inherit; font-size: 14px; color:#b3b3b3;}
 header .dropdown-content li a { text-align:left!important; margin:0!important; padding:0!important;}
 header .dropdown-content li.divider {padding:0!important;}
 header .dropdown-content li:hover { background:none;}
+header nav { background:#fff!important; height:69px !important;}
+header nav a.button-collapse {display: none;}
 
-.logo { padding: 10px 20px; display: inline-block;}
-.logo img { width:78%;}
+.logo { padding: 0 20px 0; display: inline-block;}
+.logo img { width:78%; vertical-align: middle;}
 .menu_main { padding: 14px 0; margin-top: 6px;}
-header .pull-right {margin-top: 5px;}
+header .pull-right {float: right; margin-right: 20px;}
+header ul.pull-right li a:after {bottom: 0px!important;}
+header .pull-right i {font-size: 28px !important; float: left; vertical-align: middle; line-height: 18px; height: 30px; margin-right: 5px;}
 .menu_main a i {font-size: 16px;}
 a.line { position:relative; z-index:9;}
 header .col ul li a:hover:after, a.line:hover:after {width: 100%;}
@@ -111,13 +115,14 @@ header i { color:#999;}
     color: #2dbd9a!important;
     font-weight: 500;
     padding: 8px 18px !important;
-	margin: 10px 0px!important;
+	margin: 15px 0px 0 0px!important;
     text-transform: uppercase;
     transition: all 150ms ease;
 }
+.pull-right a.dropdown-button { padding:0; margin: 0 0 0 10px; line-height: 20px;}
 .profile_text { font-size:12px!important; line-height:16px!important; color:#333!important; text-transform:uppercase!important;}
 .profile_text span { color:#2dbd9a!important; font-size:12px!important; padding: 0 !important; text-transform: none!important;}
-.eligibility_but a:hover { background: #2dbd9a; color: #fff !important; border: 1px solid #2dbd9a;}
+.eligibility_but a:hover { background: #2dbd9a!important; color: #fff !important; border: 1px solid #2dbd9a;}
 header .container-fluid .row {position: fixed; width: 1440px; background: #fff; border-bottom: 1px solid #f8f8f8; top: 0; z-index:99;}
 
 .banner_section { margin-top:70px;}
@@ -243,6 +248,42 @@ ol.bjqs-markers li{display:inline;}
 ol.bjqs-markers li a{display:inline-block;}
 p.bjqs-caption{display:block;width:96%;margin:0;padding:2%;position:absolute;bottom:0;}
 
+/* menu css */
+div.card-container {
+  height: 200px;
+  line-height: 200px;
+  width: 100%;
+  text-align: center;
+  position: relative;
+  padding: 0 24px;
+}
+
+.card-container img.card-cover-img{
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+}
+
+span.card-text-container {
+  display: inline-block;
+  vertical-align: middle;
+  line-height: normal;
+  color: #fff;
+  position: relative;
+  z-index: 2;
+  font-size: 2rem;
+}
+
+@media only screen and (min-width: 993px){
+nav a.button-collapse {
+    display: block;
+}
+}
+
 
 
 @-webkit-keyframes swinging{
@@ -267,5 +308,7 @@ p.bjqs-caption{display:block;width:96%;margin:0;padding:2%;position:absolute;bot
 
 
 @media only screen and (min-width: 320px) and (max-width: 480px) {
-	
+	.container-fluid, header .container-fluid .row { max-width:100%;}
+	#sidenav-overlay {z-index: 9 !important;}
+	header nav a.button-collapse {display: block!important;}
 }
