@@ -64,7 +64,7 @@ i {vertical-align: middle;}
 	margin: 0 auto;
 }
 .container-fluid a { color:#2dbd9a;}
-.banner_section .row { margin-bottom:0;}
+.banner_section .row { margin-bottom:0; overflow:hidden;}
 .container-fluid .col { padding:0; margin:0;}
 header .col ul li { display:inline-block;}
 header .col ul li a {text-align: center; padding: 13px 0px 0px; margin: 0px 10px 10px; font-size:14px; color:#616161; text-decoration:none; position:relative;}
@@ -206,8 +206,8 @@ header .container-fluid .row {position: fixed; width: 1440px; background: #fff; 
 .how_to_get .content_part a img:hover { opacity:0.6; }
 
 .map_img_sec { position:relative; height:660px; overflow:hidden; background: #fff; border-bottom:1px solid #f8f8f8;}
-.map_img_sec video {position: absolute; left: 0; z-index: 0;}
-.map_img_sec .well {width: 60%; padding: 100px; float: left; z-index: 999; position: absolute;}
+.map_img_sec video {position: absolute; left: -700px; z-index: 0; top: -4px;}
+.map_img_sec .well {width: 60%; padding: 100px; right: 0px; z-index: 9; position: absolute;}
 .map_img_sec h2 {font-size: 40px; font-weight: 600; font-family: 'Montserrat', sans-serif; line-height: 50px; text-transform: uppercase;}
 .profile_img { position: absolute; right: 0; height: 660px;}
 .profile_img img {height: 660px; width: 730px;}
