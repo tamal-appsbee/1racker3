@@ -208,7 +208,8 @@ header .container-fluid .row {position: fixed; width: 1440px; background: #fff; 
 .map_img_sec { position:relative; height:660px; overflow:hidden; background: #fff; border-bottom:1px solid #f8f8f8;}
 .map_img_sec video {position: absolute; left: 0; z-index: 0;}
 .map_img_sec .well {width: 60%; padding: 100px; float: left; z-index: 9; position: absolute;}
-.map_img_sec h2 {font-size: 40px; font-weight: 600; font-family: 'Montserrat', sans-serif; line-height: 50px; text-transform: uppercase;}
+.map_img_sec h2 {font-size: 50px; font-weight: 500; font-family: 'Montserrat', sans-serif; line-height: 50px;}
+.map_img_sec h2 strong { color:#f24e4e; text-transform: uppercase; font-weight: 600;}
 .profile_img { position: absolute; right: 0; height: 660px;}
 .profile_img img {height: 660px; width: 730px;}
 .map_img_sec img.map_section {height: 660px; margin-left: -131px;}
@@ -228,7 +229,7 @@ footer ul li a.active:hover span {transform: translateY(0px);}
 
 
 /* Basic jQuery Slider essential styles */
-#banner-fade {z-index: 9; margin: 50px;}
+#banner-fade {z-index: 9; margin: 150px 0 0 150px;}
 ul.bjqs-controls, .bjqs-markers { display:none;}
 ul.bjqs{position:relative; list-style:none;padding:0;margin:0;overflow:hidden; display:none;}
 li.bjqs-slide{position:absolute; display:none;}
