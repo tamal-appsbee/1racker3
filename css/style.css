@@ -68,7 +68,7 @@ i {vertical-align: middle;}
 .container-fluid .col { padding:0; margin:0;}
 header .col ul li { display:inline-block; line-height: 60px;}
 header .col ul li a {text-align: center; padding: 13px 0px 0px; line-height: 16px; margin: 0px 10px 10px; font-size:14px; color:#616161; text-decoration:none; position:relative;}
-header .col ul li a:hover { color:#1ea181; background:none;}
+header .col ul li a:hover, header .col ul li a.active { color:#1ea181; background:none;}
 header .dropdown-content {min-width: 172px !important; top: 70px !important; left: 85.6% !important;}
 header .dropdown-content li { text-align:left!important; padding:5px 10px!important; margin:0!important;min-height: inherit; font-size: 14px; color:#b3b3b3;}
 header .dropdown-content li a { text-align:left!important; margin:0!important; padding:0!important;}
@@ -83,6 +83,7 @@ header nav a.button-collapse {display: none;}
 header .pull-right {float: right; margin-right: 20px;}
 header ul.pull-right li a:after {bottom: 0px!important;}
 header .pull-right i {font-size: 28px !important; float: left; vertical-align: middle; line-height: 18px; height: 30px; margin-right: 5px;}
+header .pull-right ropdown-content li a { padding:5px 0!important;}
 .menu_main a i {font-size: 16px;}
 a.line { position:relative; z-index:9;}
 header .col ul li a:hover:after, a.line:hover:after {width: 100%;}
@@ -277,6 +278,11 @@ span.card-text-container {
   z-index: 2;
   font-size: 2rem;
 }
+
+.center_head { text-align: center; color:#1ea181; font-size: 40px; font-weight: 600; text-transform: uppercase; margin: 20px 0 0; line-height: 40px; font-family: 'Montserrat', sans-serif; border-bottom: 1px dashed #eee; padding: 20px 0;}
+.list { margin-top:20px;}
+.list li { padding-bottom:10px; font-size:14px; padding-left: 20px; position: relative;}
+.list li:after { content: ''; width: 10px; height: 10px; background: #eee; position: absolute; top:6px; left: 0px; border-radius:50%;}
 
 @media only screen and (min-width: 993px){
 nav a.button-collapse {
