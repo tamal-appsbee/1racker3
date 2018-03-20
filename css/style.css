@@ -75,7 +75,7 @@ header nav a.button-collapse {display: none;}
 .logo { padding: 0 20px 0; display: inline-block;}
 .logo img { width:80px; vertical-align: middle;}
 .menu_main { padding: 14px 0; margin-top: 6px;}
-header .pull-right {float: right; margin-right: 20px;}
+header .pull-right {float: right; margin-right: 20px; width: initial;}
 header ul.pull-right li a:after {bottom: -4px!important;}
 header .pull-right i {font-size: 28px !important; float: left; vertical-align: middle; line-height: 18px; height: 30px; margin-right: 5px;}
 header .pull-right ropdown-content li a { padding:5px 0!important;}
@@ -284,6 +284,10 @@ span.card-text-container {
 .list li { padding-bottom:10px; font-size:14px; padding-left: 20px; position: relative;}
 .list li:after { content: ''; width: 10px; height: 10px; background: #eee; position: absolute; top:6px; left: 0px; border-radius:50%;}
 
+.pull-left { width:50%; float:left;}
+.pull-right { width:50%; float:right;}
+
+
 @media only screen and (min-width: 993px){
 nav a.button-collapse {
     display: block;
@@ -313,8 +317,31 @@ nav a.button-collapse {
 
 
 
-@media only screen and (min-width: 320px) and (max-width: 480px) {
+@media only screen and (min-width: 320px) and (max-width: 767px) {
 	.container-fluid, header .container-fluid .row { max-width:100%;}
 	#sidenav-overlay {z-index: 9 !important;}
 	header nav a.button-collapse {display: block!important;}
+	.content_part, .how_to_get .content_part {padding:30px 20px;}
+	.container-fluid .row .col.s6, .container-fluid .row .col.s4, .container-fluid .row .col.s3, .container-fluid .row .col.s6 { width:100%;}
+	.col.s6.app_img, .we_care_main { text-align:center;}
+	.col.s6.app_img img, .we_care_main img {width: 250px; float: none; margin: 20px auto;}
+	.container-fluid .row .col.s3 { text-align:center;}
+	.how_to_get .content_part img {width: 250px; float: none; margin: 30px 0;}
+	.position_img img {position: inherit;}
+	.logo img {margin-top: 6px;}
+	.global_footer__section {margin: 0 auto 20px;}
+	#banner-fade { margin:0;}
+	.map_img_sec h2 {font-size: 24px; line-height: 30px; padding: 20px;}
+	.map_img_sec video {left: -7%; right: 0; top: 200px; transform: translateX(-50%); width:700px;}
+	.pull-left, .pull-right { width: 100%; float: none;}
+	header .col ul li {display: block;}
+	.side-nav {width: 270px!important;}
+	.side-nav a {height: 35px; line-height: 35px !important; text-align: left !important; border-bottom: 1px solid #eee; padding: 0 10px!important; margin: 0 !important;}
+	.eligibility_but a { border:none !important; background:#2dbd9a!important; color:#ffffff!important; border-radius:0!important;}
+	.side-nav a i {display: inline-block; height: 24px; line-height: 20px;}
+	header .col ul li a:after {bottom: 0!important;}
+	header .dropdown-content {min-width: 172px !important; top: inherit !important; left: 0!important;}
+	header .dropdown-content li { padding:0!important;}
+	header .dropdown-content li a {padding:0 10px!important;}
+	header .dropdown-content li.profile_text {padding:10px!important;}
 }
