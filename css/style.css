@@ -198,7 +198,7 @@ header .container-fluid .row {position: fixed; width: 1440px; background: #fff; 
 .we_care_main img {width: 300px; margin: 130px 0 30px; float: none;}
 
 .we_care_main.features_sec_main {border-bottom:1px solid #f8f8f8;}
-.we_care_main.features_sec_main img { width: 400px; margin:0 auto; float: none;	display: inherit;}
+.we_care_main.features_sec_main img { width: 250px; margin:20px auto; float: none;	display: inherit;}
 
 .how_to_get .content_part { padding:80px 80px 0; position:relative; width: 100%;}
 .how_to_get .content_part .s4 {padding:0 15px;}
