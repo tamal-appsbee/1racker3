@@ -151,13 +151,15 @@ header .container-fluid .row {position: fixed; width:1200px; background: #fff; b
 }
 .content_part .s4 { padding:15px;}
 .gray_light_sec { background:#fafafa;}
+footer .container-fluid { box-shadow:none;}
 .global_footer {
-    background: #272a2c;
+    background:#f1f3f4;/*#272a2c*/
     font-size: 14px;
-    padding: 50px;
+    padding:30px 50px;
 	text-align: center;
 }
-.global_footer a:hover { color:#fff;}
+.global_footer a { color:#656565;}
+.global_footer a:hover { color:#999; text-decoration:underline;}
 .global_footer__container {
     display: inline-flex;
     flex-flow: row;
@@ -226,7 +228,7 @@ header .position_drop .dropdown-content {min-width: 200px !important; top: 50px 
 
 .down_arrow {position: absolute; z-index: 9; bottom: 0; padding: 0; margin: 0; left: 40px;}
 /*.map_img_sec video {margin-left: -132px;}*/
-
+.down_arrow2 {position: absolute; z-index: 9; bottom: 0; padding: 0; margin: 0; right: 40px;}
 
 footer ul li a span {display: inline-block; position: relative; transition: transform 0.3s ease 0s;}
 footer ul li a span:before {content: attr(data-hover); position: absolute; top: 100%; transform: translate3d(0px, 0px, 0px); color:#39d2b8;}
@@ -288,10 +290,19 @@ span.card-text-container {
 .pull-right { width:50%; float:right;}
 .contact_us_main {min-height:700px;}
 .gps-fleet-tracking_banner { position:relative;}
-.gps-fleet-tracking_banner h3 { position:absolute; font-size: 30px; font-weight: 600; font-family: 'Montserrat', sans-serif;    line-height: 50px; text-shadow: 5px 5px 10px #000; text-transform: uppercase; color:#fff; right: 10px;}
-footer h5 { text-transform: uppercase; font-weight: 600; font-size: 18px; margin-top: 45px; font-family: 'Montserrat', sans-serif;}
-footer p { font-family: 'Montserrat', sans-serif;}
+.gps-fleet-tracking_banner h3 { position:absolute; font-size: 40px; font-weight: 600; font-family: 'Montserrat', sans-serif; width: 400px; line-height: 50px; text-shadow: 5px 5px 10px #000; color:#fff; right: 10px; top: 35px;}
+footer { position:relative;}
+footer .row { margin:0; padding:0;}
+footer .col.s4 { text-align: left;}
+footer h5 { text-transform: uppercase; font-weight: 600; font-size: 18px; font-family: 'Montserrat', sans-serif;}
+footer p, footer a { font-family: 'Montserrat', sans-serif; margin-bottom:10px; font-size: 12px;}
+footer .gray_l {color: #999; font-size: 12px; float: left; text-decoration: underline;}
 
+.contact_us_main .we_care_main.features_sec_main { border-bottom: none!important;}
+.content_part p.benefits-group_description { padding-bottom:20px;}
+.social li { display:inline-block;}
+.social li img { width:20px; height:20px; margin-right: 8px;}
+.social li img:hover { opacity:0.7;}
 
 @media only screen and (min-width: 993px){
 nav a.button-collapse {
@@ -322,8 +333,8 @@ nav a.button-collapse {
 
 
 
-@media only screen and (min-width: 320px) and (max-width: 767px) {
-	.container-fluid, header .container-fluid .row { max-width:100%;}
+@media only screen and (min-width: 320px) and (max-width: 992px) {
+	.container-fluid, header .container-fluid .row { max-width:100%; width:100%;}
 	#sidenav-overlay {z-index: 9 !important;}
 	header nav a.button-collapse {display: block!important;}
 	.content_part, .how_to_get .content_part {padding:30px 20px;}
@@ -337,7 +348,7 @@ nav a.button-collapse {
 	.global_footer__section {margin: 0 auto 20px;}
 	#banner-fade { margin:0;}
 	.map_img_sec h2 {font-size: 24px; line-height: 30px; padding: 20px;}
-	.map_img_sec video {left: -7%; right: 0; top: 200px; transform: translateX(-50%); width:700px;}
+	.map_img_sec video {left: 50%; right: 0; top: 180px; transform: translateX(-75%); width: 700px;}
 	.pull-left, .pull-right { width: 100%; float: none;}
 	header .col ul li {display: block;}
 	.side-nav {width: 270px!important;}
@@ -349,4 +360,23 @@ nav a.button-collapse {
 	header .dropdown-content li { padding:0!important;}
 	header .dropdown-content li a {padding:0 10px!important;}
 	header .dropdown-content li.profile_text {padding:10px!important;}
+	.gps-fleet-tracking_banner h3 {font-size: 15px; width: 100%; text-align: center; right: 0;}
+	.global_footer__section {padding: 0!important;}
+	footer .col.s4, footer, footer .gray_l { text-align:center; float:none;}
+	}
+
+@media only screen and (min-width: 481px) and (max-width: 992px) {
+	.gps-fleet-tracking_banner h3 {font-size: 24px;}
+}
+
+@media only screen and (min-width: 993px) and (max-width: 1199px) {
+	.container-fluid, header .container-fluid .row { max-width:100%; width:100%;}
+	.map_img_sec h2 {font-size: 30px; line-height: 36px;}
+	.map_img_sec {height: 470px;}
+	.content_part {padding:30px 20px;}
+	.position_img img {right: 0;}
+	.how_to_get .content_part img {width: 228px;}
+	.position_img {min-height: 302px;}
+	.map_img_sec video {width: 86%;}
+	
 }
