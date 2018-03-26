@@ -1,0 +1,35 @@
+.an-sidebar-widgets {
+  position: relative;
+  padding: $padding-base $padding-small;
+  display: flex;
+  justify-content: space-between;
+}
+
+.widget-signle {
+  padding: $padding-10;
+  background-color: lighten($sidebar-color, 5%);
+  width: 60px;
+  margin-right: $padding-10 - 5;
+  @include border-radius(2px);
+  @extend .text-center;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  h5 {
+    color: $font-color-white;
+    margin: 0;
+    padding-bottom: $padding-10 - 5;
+    font-weight: $font-weight-bold;
+  }
+  p {
+    //color: lighten($sidebar-color, 20%);
+    color: $sidebar-link-color;
+    margin: 0;
+    text-transform: uppercase;
+    font-size: $font-size-base - 4;
+  }
+}
+
+

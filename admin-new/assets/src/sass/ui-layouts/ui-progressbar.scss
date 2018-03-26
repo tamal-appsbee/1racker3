@@ -1,0 +1,21 @@
+.progress {
+  box-shadow: none;
+  height: $padding-small;
+
+  &.square {
+    @include border-radius(0);
+  }
+
+  &.big-radius {
+    @include border-radius($padding-small * 2);
+  }
+
+  .progress-bar {
+    box-shadow: none;
+    line-height: $padding-small;
+
+    &.default {
+      background: $sidebar-color;
+    }
+  }
+}

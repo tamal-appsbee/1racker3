@@ -1,0 +1,137 @@
+// Notification content
+.an-info-content {
+  position: relative;
+  width: 100%;
+  max-height: 268px;
+  overflow: auto;
+
+  &.notifications-content {
+    .an-info-single {
+      padding-left: ($padding-base * 2) + 15;
+
+      .user-name {
+        padding: 2px 0 0;
+        @include text-wrapping;
+      }
+      .content {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+
+}
+
+.an-info-single {
+  position: relative;
+  padding-top: $padding-small - 5;
+  padding-right: $padding-small;
+  padding-bottom: $padding-small - 5;
+  padding-left: ($padding-base * 3) + 5;
+  background-color: $bg-body;
+  @include border-bottom(rgba($black, .06));
+
+  &.unread {
+    background-color: $white;
+  }
+
+  a {
+    &:hover {
+      .user-name {
+        color: $link-color;
+      }
+    }
+  }
+
+  .user-img {
+    position: absolute;
+    left: $padding-small - 5;
+    top:  $padding-small - 5;
+    width: $padding-small * 3;
+    height: $padding-small * 3;
+    display: block;
+    @include background-property;
+    @include border-radius(50%);
+  }
+
+  .icon-container {
+    position: absolute;
+    left: $padding-small - 5;
+    top:  $padding-small - 5;
+    width: $padding-10 * 3 + 5;
+    height: $padding-10 * 3 + 5;
+    display: block;
+    color: $font-color-white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @extend .text-center;
+    @include border-radius(50%);
+
+    &.important {
+      background-color: $sidebar-color;
+    }
+
+    &.success {
+      background-color: $secondary-color-main;
+    }
+
+    &.nutral {
+      background-color: $secondary-color-two;
+    }
+
+    &.warning {
+      background-color: $warning-color;
+    }
+
+    &.danger {
+      background-color: $secondary-color-four;
+    }
+
+    i {
+      font-size: $font-size-h4;
+    }
+
+  }
+
+  .user-name {
+    margin: 0;
+    padding: $padding-small - 9 0 $padding-small - 11;
+  }
+
+  .content {
+    color: $base-font-color-light;
+    font-size: $font-size-base - 2;
+    margin-bottom: $padding-small - 11;
+    @include text-wrapping;
+
+    i {
+      position: relative;
+      top: 2px;
+      margin-right: $margin-small - 10;
+      font-size: $font-size-base + 1;
+    }
+  }
+
+  .info-time {
+    position: absolute;
+    right: $padding-small;
+    top: $padding-small - 3;
+    color: $base-font-color-light;
+    font-size: $font-size-base - 2;
+    @extend .text-uppercase;
+
+    i {
+      position: relative;
+      top: 2px;
+      margin-right: $margin-small - 10;
+      font-size: $font-size-base + 1;
+    }
+  }
+}
+
+// show all notification button
+.an-info-show-all-btn {
+  position: relative;
+  padding: $padding-small $padding-base * 2;
+}

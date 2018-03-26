@@ -1,0 +1,28 @@
+.an-page-content {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: stretch;
+}
+
+.an-content-body {
+  padding: $padding-small * 2;
+  width: 100%;
+
+  @media (max-width: $screen-md) {
+    padding-right: $padding-base * 4;
+  }
+
+  @media (max-width: $screen-sm) {
+    padding-right: $padding-small * 2;
+  }
+
+  &.no-padding {
+    padding: 0;
+  }
+
+  @media (max-width: $screen-xs) {
+    padding: $padding-base $padding-base;
+  }
+}

@@ -1,0 +1,107 @@
+.an-default-select-wrapper {
+  position: relative;
+  width: 100%;
+  height: 36px;
+
+  &.primary {
+    .selectize-input {
+      background: rgba($sidebar-color, .3);
+      border-color: rgba($sidebar-color, .5);
+    }
+
+    .selectize-dropdown-content {
+      border-color: rgba($sidebar-color, .5);
+
+      .option {
+        &.active {
+          background: $sidebar-color;
+          color: $font-color-white;
+        }
+      }
+    }
+  }
+
+  &.success {
+    .selectize-input {
+      background: rgba($secondary-color-main, .3);
+      border-color: rgba($secondary-color-main, .5);
+    }
+
+    .selectize-dropdown-content {
+      border-color: rgba($secondary-color-main, .5);
+      .option {
+        &.active {
+          background: $secondary-color-main !important;
+          color: $font-color-white !important;
+        }
+      }
+    }
+  }
+
+  &.info {
+    .selectize-input {
+      background: rgba($secondary-color-two, .3);
+      border-color: rgba($secondary-color-two, .5);
+    }
+
+    .selectize-dropdown-content {
+      border-color: rgba($secondary-color-two, .5);
+      .option {
+        &.active {
+          background: $secondary-color-two !important;
+          color: $base-font-color !important;
+        }
+      }
+    }
+  }
+
+  &.warning {
+    .selectize-input {
+      background: rgba($brand-warning, .3);
+      border-color: rgba($brand-warning, .5);
+    }
+
+    .selectize-dropdown-content {
+      border-color: rgba($brand-warning, .5);
+      .option {
+        &.active {
+          background: $brand-warning !important;
+          color: $base-font-color !important;
+        }
+      }
+    }
+  }
+
+  .selectize-control{
+    width: 100%;
+    height: 100%;
+
+    .selectize-input {
+      &:after {
+        right: 10px;
+      }
+      &,
+      &.input-active {
+
+        height: 100%;
+        padding: 0 $padding-10;
+        display: flex;
+        align-items: center;
+        border-radius: $border-radius-base;
+        box-shadow: none;
+      }
+    }
+    .selectize-dropdown {
+      z-index: 11;
+    }
+
+    .selectize-dropdown-content {
+      .option {
+        &.active {
+          background: $sidebar-color;
+          color: $font-color-white;
+        }
+      }
+    }
+  }
+}

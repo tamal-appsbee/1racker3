@@ -1,0 +1,50 @@
+.an-sidebar-nav {
+  position: relative;
+  //width: 240px;
+  background-color: $sidebar-color;
+  //@include transition(.1s);
+
+
+  &.collapse {
+    width: 50px;
+    display: block;
+    &.an-hide-sidebar {
+      width: 0;
+      overflow: hidden;
+
+      .an-sidebar-nav {
+        width: 0px;
+      }
+    }
+
+    @media (max-width: $screen-sm) {
+      width: 0;
+      overflow: hidden;
+     }
+
+    .an-sidebar-widgets {
+      display: none;
+    }
+
+    // menu setting when collapse sidebar
+    .an-sidebar-nav {
+      width: 50px;
+    }
+
+    .an-nav-item {
+      > a {
+        min-height: 38px;
+        padding-left: $padding-10 - 2;
+        padding-right: $padding-10 - 2;
+        > i {
+          top: 5px;
+          font-size: $font-size-base * 1.9;
+        }
+
+        .nav-title {
+          display: none;
+        }
+      }
+    }
+  }
+}

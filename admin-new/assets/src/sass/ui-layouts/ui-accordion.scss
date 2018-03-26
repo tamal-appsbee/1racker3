@@ -1,0 +1,54 @@
+.an-accordion {
+  position: relative;
+  width: 100%;
+  &.contextual {
+    .panel-heading {
+      a {
+        &:hover,
+        &:focus,
+        &:active{
+          color: inherit;
+        }
+      }
+    }
+  }
+
+  &.square {
+    .panel {
+      @include border-radius(0);
+    }
+  }
+
+  .panel-default {
+    .panel-heading {
+      background: $white;
+    }
+  }
+
+  .panel {
+    @include border-radius($border-radius-base);
+    box-shadow: none;
+  }
+
+  .list-group-item {
+    padding: 0;
+  }
+
+  .panel-heading {
+    padding: 0;
+
+    .panel-title {
+      a {
+        @include display(block);
+        padding: $padding-small;
+        &:hover,
+        &:focus,
+        &:active {
+          color: $sidebar-color;
+        }
+      }
+    }
+  }
+
+
+}

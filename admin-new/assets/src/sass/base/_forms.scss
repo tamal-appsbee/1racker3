@@ -1,0 +1,320 @@
+// Basic form design goese here
+.an-form {
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+
+
+.an-input-group {
+  position: relative;
+  width: 100%;
+  &.right {
+    .an-input-group-addon {
+      right: 0;
+      left: auto;
+      border-left: 1px solid $border-color;
+    }
+    .an-form-control {
+      padding-right: $padding-10 * 5;
+      padding-left: $padding-10 * 2;
+    }
+  }
+  .an-input-group-addon {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 40px;
+    height: 34px;
+    line-height: 34px;
+    @extend .text-center;
+    border-right: 1px solid $border-color;
+    font-size: $font-size-h4;
+    background: rgba($bg-body, .3);
+  }
+  .an-form-control {
+    padding-left: $padding-10 * 5;
+  }
+
+}
+
+// Form control class for input field
+.an-form-control {
+  position: relative;
+  width: 100%;
+  height: 34px;
+  padding-left: $padding-small;
+  padding-right: $padding-small;
+  outline: 0;
+  background-color: transparent;
+  @include border($base-font-color-light);
+  @include transition(all, .3s, ease);
+  @include border-radius(2px);
+  margin-bottom: $margin-base;
+
+  &.primary {
+    background-color: rgba($sidebar-color, .3);
+    @include border(rgba($sidebar-color, .4));
+    &:hover,
+    &:focus,
+    &:active {
+      border-color: $sidebar-color;
+    }
+  }
+
+  &:disabled {
+    cursor: no-drop;
+  }
+
+  &.success {
+    background-color: rgba($secondary-color-main, .3);
+    @include border(rgba($secondary-color-main, .4));
+    &:hover,
+    &:focus,
+    &:active {
+      border-color: $secondary-color-main;
+    }
+  }
+
+  &.info {
+    background-color: rgba($secondary-color-two, .3);
+    @include border(rgba($secondary-color-two, .4));
+    &:hover,
+    &:focus,
+    &:active {
+      border-color: $secondary-color-two;
+    }
+  }
+
+  &.warning {
+    background-color: rgba($brand-warning, .3);
+    @include border(rgba($brand-warning, .4));
+    &:hover,
+    &:focus,
+    &:active {
+      border-color: $brand-warning;
+    }
+  }
+
+  &.danger {
+    background-color: rgba($secondary-color-four, .1);
+    @include border(rgba($secondary-color-four, .2));
+    &:hover,
+    &:focus,
+    &:active {
+      border-color: $secondary-color-four;
+    }
+  }
+
+  &.light-text {
+    color: $font-color-white;
+  }
+
+  &.no-redius {
+    @include border-radius(0);
+  }
+
+  &.border-bottom {
+    border: 0;
+    padding-left: 0;
+    @include border-bottom(transparent);
+
+    &:active,
+    &:focus,
+    &.active {
+      border-color: darken($sidebar-color, 10%);
+    }
+  }
+
+  &:active,
+  &:focus,
+  &.active {
+    border-color: $base-font-color;
+  }
+}
+
+textarea {
+  &.an-form-control {
+    min-height: 120px;
+    padding-top: $padding-small;
+    resize: vertical;
+  }
+}
+
+// Searhc field with button
+.an-search-field {
+  position: relative;
+  .an-form-control {
+    padding-right: $padding-base * 2;
+  }
+
+  .an-btn-icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 34px;
+    line-height: 1;
+    width: $padding-base * 2;
+    color: $base-font-color-light;
+
+    i {
+      font-size: $font-size-base + 6;
+    }
+  }
+}
+
+
+// custom checkbox
+.an-custom-checkbox {
+  position: relative;
+  margin-right: $padding-small;
+  input {
+    display: none;
+  }
+
+  &.primary {
+    input[type="checkbox"]:checked + label {
+      &:before {
+        color: $sidebar-color;
+      }
+    }
+  }
+
+  &.info {
+    input[type="checkbox"]:checked + label {
+      &:before {
+        color: $secondary-color-two;
+      }
+    }
+  }
+
+  &.warning {
+    input[type="checkbox"]:checked + label {
+      &:before {
+        color: $brand-warning;
+      }
+    }
+  }
+
+  &.danger {
+    input[type="checkbox"]:checked + label {
+      &:before {
+        color: $secondary-color-four;
+      }
+    }
+  }
+
+  &.blocked {
+    label {
+      width: 100%;
+    }
+  }
+  label {
+    position: relative;
+    cursor: pointer;
+    padding-left: $padding-10;
+    font-weight: normal;
+
+    &:before {
+      content: "\f372";
+      font-family: "Ionicons";
+      position: relative;
+      left: -10px;
+      top: 2px;
+      font-size: $padding-base;
+      color: $border-color;
+    }
+  }
+
+  input[type="checkbox"]:checked + label {
+    &:before {
+      content: "\f374";
+      font-family: "Ionicons";
+      color: $secondary-color-main;
+
+    }
+  }
+}
+
+
+
+.an-custom-radiobox {
+  position: relative;
+  margin-right: $padding-small;
+  input {
+    display: none;
+  }
+
+  &.primary {
+    input[type="radio"]:checked + label {
+      &:before {
+        color: $sidebar-color;
+      }
+    }
+  }
+
+  &.info {
+    input[type="radio"]:checked + label {
+      &:before {
+        color: $secondary-color-two;
+      }
+    }
+  }
+
+  &.warning {
+    input[type="radio"]:checked + label {
+      &:before {
+        color: $brand-warning;
+      }
+    }
+  }
+
+  &.danger {
+    input[type="radio"]:checked + label {
+      &:before {
+        color: $secondary-color-four;
+      }
+    }
+  }
+
+  &.blocked {
+    label {
+      width: 100%;
+    }
+  }
+  label {
+    position: relative;
+    cursor: pointer;
+    padding-left: $padding-10;
+    color: $base-font-color;
+    font-weight: normal;
+
+    &:before {
+      content: "\f3a6";
+      font-family: "Ionicons";
+      position: relative;
+      left: -10px;
+      top: 2px;
+      font-size: $padding-base;
+      color: $border-color;
+    }
+  }
+
+  input[type="radio"]:checked + label {
+    &:before {
+      content: "\f3a7";
+      font-family: "Ionicons";
+      color: $secondary-color-main;
+
+    }
+  }
+}
+
+
+
+.an-file-upload-container {
+  .btn.btn-primary.btn-file {
+    @extend .an-btn;
+    @extend .an-btn-default;
+  }
+}

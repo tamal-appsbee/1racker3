@@ -1,0 +1,205 @@
+.an-inbox-content {
+  position: relative;
+  width: 100%;
+}
+
+.an-inbox-color-list {
+  position: relative;
+  h5 {
+    color: $base-font-color-light;
+    @extend .text-uppercase;
+    padding-left: $padding-small;
+  }
+
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    li {
+      a {
+        padding: $padding-10 $padding-small;
+        @include display(flex);
+        @include border-radius($border-radius-base);
+
+        &.active {
+          background: darken($bg-body, 10%);
+          &:hover {
+            color: $base-font-color;
+          }
+        }
+
+        i {
+          padding-right: $padding-base;
+        }
+      }
+    }
+  }
+}
+
+.an-inbox-body {
+  .row {
+    margin: 0;
+  }
+  .col-md-7,
+  .col-md-5 {
+    padding: 0;
+  }
+
+  .an-info-content {
+    max-height: 600px;
+    border-right: 1px solid $border-color;
+    width: 100% !important;
+
+    .an-info-single {
+      &.favorite {
+        &:before {
+          background: $fav-color;
+        }
+      }
+
+      &.important {
+        &:before {
+          background: $secondary-color-four;
+        }
+      }
+      &.warning {
+        &:before {
+          background: $secondary-color-three;
+        }
+      }
+      &.social {
+        &:before {
+          background: $secondary-color-main;
+        }
+      }
+
+
+      &:before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 3px;
+        height: 100%;
+        background: transparent;
+      }
+      &:hover,
+      &.open {
+        background: rgba($secondary-color-three, .5);
+        a {
+          .content {
+            color: $base-font-color;
+          }
+        }
+      }
+      a {
+        &:hover {
+          .user-name {
+            color: $base-font-color;
+          }
+        }
+      }
+    }
+  }
+
+  .an-inbox-message-details {
+    position: relative;
+    height: 600px;
+    overflow: auto;
+    padding: $padding-base;
+
+    .title {
+      margin: 0;
+      margin-bottom: $margin-base;
+    }
+    .sender {
+      width: 100%;
+      padding: $padding-10 0;
+      border-top: 1px solid $border-color;
+      border-bottom:  1px solid $border-color;
+      @include display(flex);
+      @include align-items(center);
+      @include justify-content(space-between);
+      > div {
+        @include display(flex);
+        @include align-items(center);
+      }
+
+      .user-img {
+        width: 30px;
+        height: 30px;
+        margin-right: $margin-10;
+      }
+      .an-time {
+        margin-left: $margin-10;
+      }
+
+      .list-location {
+        margin-left: $margin-small;
+      }
+    }
+
+  }
+  .message-body {
+    position: relative;
+    padding: $padding-small 0;
+    strong {
+      margin-bottom: $margin-10;
+    }
+
+    p {
+      padding-top: $padding-small;
+      color: $base-font-color-light;
+    }
+
+    .attachment {
+      position: relative;
+      width: 100%;
+      margin-top: $margin-base;
+      padding: 0;
+      border-top: 1px solid $border-color;
+      @include display(flex);
+      @include align-items(center);
+      @include justify-content(space-between);
+
+      p {
+        padding-top: 0;
+        color: $base-font-color;
+        margin: 0;
+        i {
+          position: relative;
+          top: 3px;
+          padding-right: $padding-10 - 5;
+          font-size: $font-size-base + 6;
+        }
+      }
+    }
+  }
+
+  .an-reply-form {
+    position: relative;
+    padding-top: $padding-small;
+    button {
+      margin-top: $margin-small;
+    }
+  }
+}
+
+.an-next-prev-btn {
+  position: relative;
+  margin-left: $margin-10;
+}
+
+.an-control-btn {
+  @extend .an-btn;
+  padding: 0;
+  font-size: $font-size-h3;
+  background: transparent;
+  height: 30px;
+  margin-left: -5px;
+
+  &:hover {
+    color: $link-color;
+  }
+}

@@ -1,0 +1,239 @@
+.an-social-icon {
+  width: $padding-10 * 4 - 5;
+  height: $padding-10 * 4 - 5;
+  line-height: $padding-10 * 4 - 4;
+  color: $font-color-white;
+  background: $bg-body;
+  font-size: $font-size-base + 4;
+  margin: $margin-10 - 5;
+  //@include border($border-color);
+  opacity: .9;
+  @include border-radius($border-radius-base);
+  @include display(inline-block);
+  @extend .text-center;
+  @include transition(.3s);
+
+  &.circle {
+    @include border-radius(50%);
+  }
+
+  &.square {
+    @include border-radius(0);
+  }
+
+
+
+  &:hover {
+    opacity: 1;
+    color: $font-color-white;
+  }
+
+
+  &.facebook {
+    background: $facebook_color;
+
+    &.hover {
+      &:hover {
+        background: $facebook_color;
+        color: $font-color-white;
+        border-color: $facebook_color;
+      }
+    }
+  }
+
+  &.twitter {
+    background: $twitter_color;
+    &.hover {
+      &:hover {
+        background: $twitter_color;
+        color: $font-color-white;
+        border-color: $twitter_color;
+      }
+    }
+  }
+
+  &.google-plus {
+    background: $google_plus_color;
+    &.hover {
+      &:hover {
+        background: $google_plus_color;
+        color: $font-color-white;
+        border-color: $google_plus_color;
+      }
+    }
+  }
+
+  &.dribble {
+    background: $dribble_color;
+    &.hover {
+      &:hover {
+        background: $dribble_color;
+        color: $font-color-white;
+        border-color: $dribble_color;
+      }
+    }
+  }
+
+  &.github {
+    background: $github_color;
+    &.hover {
+      &:hover {
+        background: $github_color;
+        color: $font-color-white;
+        border-color: $github_color;
+      }
+    }
+  }
+
+  &.instagram {
+    background: $instagram_color;
+    &.hover {
+      &:hover {
+        background: $instagram_color;
+        color: $font-color-white;
+        border-color: $instagram_color;
+      }
+    }
+  }
+
+  &.whatsapp {
+    background: $whatsapp_color;
+    &.hover {
+      &:hover {
+        background: $whatsapp_color;
+        color: $font-color-white;
+        border-color: $whatsapp_color;
+      }
+    }
+  }
+
+  &.snapchat {
+    background: $snapchat_color;
+    color: $base-font-color;
+    &.hover {
+      &:hover {
+        background: $snapchat_color;
+        border-color: $snapchat_color;
+      }
+    }
+  }
+
+  &.foursquare {
+    background: $foursquare_color;
+    &.hover {
+      &:hover {
+        background: $foursquare_color;
+        color: $font-color-white;
+        border-color: $foursquare_color;
+      }
+    }
+  }
+
+  &.pinterest {
+    background: $pinterest_color;
+    &.hover {
+      &:hover {
+        background: $pinterest_color;
+        color: $font-color-white;
+        border-color: $pinterest_color;
+      }
+    }
+  }
+
+  &.rss {
+    background: $rss_color;
+    &.hover {
+      &:hover {
+        background: $rss_color;
+        color: $font-color-white;
+        border-color: $rss_color;
+      }
+    }
+  }
+
+  &.tumblr {
+    background: $tumblr_color;
+    &.hover {
+      &:hover {
+        background: $tumblr_color;
+        color: $font-color-white;
+        border-color: $tumblr_color;
+      }
+    }
+  }
+
+  &.reddit {
+    background: $reddit_color;
+    &.hover {
+      &:hover {
+        background: $reddit_color;
+        color: $font-color-white;
+        border-color: $reddit_color;
+      }
+    }
+  }
+
+  &.hackernews {
+    background: $hackernews_color;
+    &.hover {
+      &:hover {
+        background: $hackernews_color;
+        color: $font-color-white;
+        border-color: $hackernews_color;
+      }
+    }
+  }
+
+  &.yahoo {
+    background: $yahoo_color;
+    &.hover {
+      &:hover {
+        background: $yahoo_color;
+        color: $font-color-white;
+        border-color: $yahoo_color;
+      }
+    }
+  }
+
+  &.skype {
+    background: $skype_color;
+    &.hover {
+      &:hover {
+        background: $skype_color;
+        color: $font-color-white;
+        border-color: $skype_color;
+      }
+    }
+  }
+
+  &.linkedin {
+    background: $linkedin_color;
+    &.hover {
+      &:hover {
+        background: $linkedin_color;
+        color: $font-color-white;
+        border-color: $linkedin_color;
+      }
+    }
+  }
+
+  &.vimeo {
+    background: $vimeo_color;
+    &.hover {
+      &:hover {
+        background: $vimeo_color;
+        color: $font-color-white;
+        border-color: $vimeo_color;
+      }
+    }
+  }
+
+
+  &.hover {
+    background: transparent;
+    color: $base-font-color;
+    @include border($border-color);
+  }
+
+
+}

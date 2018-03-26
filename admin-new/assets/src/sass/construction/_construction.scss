@@ -1,0 +1,44 @@
+.an-page-consturction {
+  position: relative;
+
+  .overlay {
+    @extend .overlay-utility;
+    background: rgba($black, .7);
+  }
+
+  .an-construction-content {
+    position: relative;
+    z-index: 11;
+    @extend .text-center;
+
+    .an-logo-link {
+      color: $font-color-white;
+    }
+
+    h1 {
+      color: $font-color-white;
+      font-size: $font-size-h2 + 10;
+      @extend .text-uppercase;
+      padding-bottom: $padding-small;
+    }
+
+    p {
+      color: $font-color-white;
+      font-size: $font-size-h4;
+    }
+
+    #countdowntimer {
+      padding: $padding-base 0 $padding-small * 2;
+      .colorDefinition {
+        background: transparent;
+        border: 0;
+      }
+      .style {
+        font-family: $font-primary;
+        font-weight: normal;
+      }
+    }
+
+
+  }
+}

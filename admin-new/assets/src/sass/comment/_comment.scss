@@ -1,0 +1,64 @@
+.an-comment-section {
+  position: relative;
+  padding: $padding-base * 2 0 0;
+
+  .an-title-xs {
+    span {
+      color: $base-font-color-light;
+    }
+  }
+}
+
+.an-comment-single {
+  position: relative;
+  width: 100%;
+  @include display(flex);
+  @include align-items(stretch);
+  background: $body-bg;
+  margin-bottom: $margin-base;
+
+  &.comment-reply {
+    margin-left: $margin-base * 2;
+  }
+
+  .comment-img {
+    min-width: 140px;
+    display: block;
+    @include border-radius($border-radius-base);
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+
+  h5 {
+    margin-top: 0;
+    span {
+      color: $base-font-color-light;
+    }
+  }
+
+  .comment-details {
+    padding: $padding-base;
+
+    p {
+      color: $base-font-color-light;
+    }
+
+    .reply-link {
+      color: $link-color;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+
+.an-write-comment {
+  position: relative;
+  padding-top: $padding-base;
+
+  label {
+    color: $base-font-color-light;
+    font-weight: normal;
+  }
+}

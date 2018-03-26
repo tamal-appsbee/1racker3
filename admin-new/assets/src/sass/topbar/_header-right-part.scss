@@ -1,0 +1,96 @@
+//
+// file name _header-left-part.scss
+// Mainly contain notifications, messages, profile settings
+//
+
+/* topbar right part design */
+@import 'dropdown-notifications';
+@import 'notification-content';
+
+.an-topbar-right-part {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+
+  @media(max-width: $screen-cs) {
+    width: 100%;
+    justify-content: space-around;
+    text-align: center;
+    padding: $padding-10;
+  }
+}
+
+// basic declired styles
+.an-notifications,
+.an-messages,
+.an-profile-settings {
+  position: relative;
+  margin-left: $margin-small * 2;
+
+  @media(max-width: $screen-cs) {
+    margin-left: 0;
+  }
+}
+
+/*  Profile setting  */
+.an-profile-settings {
+  .btn-group {
+    &.open {
+
+      .an-arrow-nav {
+        transform: rotate(180deg);
+      }
+    }
+    button {
+      display: flex;
+      align-items: center;
+    }
+
+    .an-profile-img {
+      position: relative;
+      height: $margin-base * 2;
+      width: $margin-base * 2;
+      display: inline-block;
+      margin-right: $margin-small - 5;
+      @extend .img-circle;
+      @include background-property;
+    }
+
+    .an-arrow-nav {
+      margin-left: $margin-small - 5;
+      @include transition(all .3s ease);
+    }
+  }
+}
+
+
+/* new notification reminder */
+.btn-group {
+  .js-has-new-messages,
+  .js-has-new-notification {
+    i {
+      &:after {
+        content: '';
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 13px;
+        height: 13px;
+        background-color: $secondary-color-main;
+        @include border($topbar-bg);
+        border-width: 3px;
+        @include border-radius(50%);
+      }
+    }
+  }
+
+  .js-has-new-messages {
+    i {
+      &:after {
+        right: -5px;
+        background-color: $secondary-color-four;
+      }
+    }
+  }
+}

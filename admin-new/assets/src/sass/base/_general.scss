@@ -1,0 +1,12 @@
+/*
+  Main parent wrapper div styled here
+ */
+
+.main-wrapper {
+  position: relative;
+  width: 100%;
+  overflow-x: hidden;
+  @media (max-width: 1200px) {
+    width: 100%;
+  }
+}

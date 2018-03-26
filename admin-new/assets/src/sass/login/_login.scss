@@ -1,0 +1,64 @@
+.an-login-container {
+  position: relative;
+  width: 100%;
+  padding: $padding-base;
+
+  .an-social-login {
+    position: relative;
+    margin-bottom: $margin-base;
+    label {
+      display: block;
+    }
+
+    .an-social-icon {
+      margin-left: 0;
+    }
+  }
+
+  .back-to-home  {
+    text-align:center;
+    position: relative;
+    margin-bottom: $margin-base;
+  }
+
+  .sign-up-link {
+    margin-bottom: 0;
+    color: $base-font-color-light;
+    a {
+      color: $link-color;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  .an-component-body {
+    padding: $padding-base;
+  }
+
+
+
+  .remembered-section {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &.no-flex {
+      justify-content: flex-start;
+    }
+
+    a {
+      color: $link-color;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  button {
+    margin-top: $margin-base;
+  }
+}

@@ -1,0 +1,54 @@
+.an-portfolio-section {
+  position: relative;
+  width: 100%;
+
+  .col-md-3 {
+    @media (max-width: $screen-xs) {
+      width: 100%;
+    }
+  }
+
+  .filter-button-group {
+    display: block;
+    padding-bottom: $padding-base * 2;
+
+    button {
+      margin: $margin-10 - 5;
+    }
+  }
+}
+
+.an-porfolio-single {
+  position: relative;
+  width: 100%;
+  margin-bottom: $margin-small * 2;
+
+  a {
+    position: relative;
+    width: 100%;
+    display: block;
+    img {
+      width: 100%;
+      border-radius: $border-radius-base;
+    }
+
+    &:hover {
+      .overlay {
+        opacity: 1;
+        visibility: visible;
+      }
+    }
+
+    .overlay {
+      @extend .overlay-utility;
+      background: rgba($black, .5);
+      @include display(flex);
+      @extend .an-flex-center-center;
+      @include border-radius($border-radius-base);
+      @include transition(.3s);
+
+      opacity: 0;
+      visibility: hidden;
+    }
+  }
+}

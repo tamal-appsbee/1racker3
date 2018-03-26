@@ -1,0 +1,59 @@
+//
+// file name _header-left-part.scss
+// Mainly contain logo, toggle button, search, favorite
+//
+
+.an-topbar-left-part {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+
+  @media(max-width: $screen-cs) {
+    padding: $padding-10 $padding-base;
+    justify-content: space-between;
+    width: 100%;
+    background-color: darken($topbar-bg, 5%);
+  }
+
+  .an-form {
+    @media(max-width: $screen-md) {
+      display: none;
+    }
+  }
+
+  // sidebar toggle button
+  .toggle-button {
+    margin-left: $margin-large * 3;
+  }
+
+  // Search
+  .an-search-field {
+    width: 300px;
+    margin-left: $margin-large * 3;
+
+    .an-form-control {
+      margin-bottom: 0;
+    }
+  }
+}
+
+// logo style
+.an-logo-heading {
+  margin: 0;
+  font-weight: $font-weight-bold;
+  letter-spacing: 1px;
+
+  a {
+    position: relative;
+    @extend .text-uppercase;
+
+    span {
+      display: block;
+      font-size: $font-size-base - 4;
+      font-weight: $font-weight-regular;
+    }
+  }
+}
+
+

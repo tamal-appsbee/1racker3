@@ -1,0 +1,40 @@
+.an-notification-content {
+  position: fixed;
+  z-index: 99;
+  max-width: 350px;
+  @extend .text-left;
+
+  &.top-right {
+    top: $padding-10 * 2;
+    right: $padding-10 * 2;
+  }
+  &.top-left {
+    top: $padding-10 * 2;
+    left: $padding-10 * 2;
+  }
+
+  &.bottom-left {
+    bottom: $padding-10 * 2;
+    left: $padding-10 * 2;
+  }
+
+  &.bottom-right {
+    bottom: $padding-10 * 2;
+    right: $padding-10 * 2;
+  }
+
+  &.bottom-full-width {
+    width: 100%;
+    max-width: 100%;
+    bottom: 0;
+    left: 0;
+  }
+
+  &.top-full-width {
+    width: 100%;
+    max-width: 100%;
+    top: 0;
+    left: 0;
+  }
+
+}

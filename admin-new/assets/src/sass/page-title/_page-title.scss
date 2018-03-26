@@ -1,0 +1,18 @@
+.an-inner-page-title {
+  position: relative;
+  padding: $padding-base * 2 0;
+  z-index: 10;
+  @extend .text-center;
+
+  h1 {
+    color: $font-color-white;
+
+    @extend .text-uppercase;
+  }
+}
+
+.an-title-xs {
+  @extend .text-uppercase;
+  margin-top: 0;
+  padding-bottom: $padding-small;
+}

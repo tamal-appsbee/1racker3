@@ -1,0 +1,74 @@
+.an-pricing-table-single {
+  position: relative;
+  width: 100%;
+  background: $body-bg;
+  margin-bottom: $margin-large;
+  @include border-radius($border-radius-base);
+
+  &.standard {
+    .price-header {
+      .plan-price {
+        color: $secondary-color-main;
+      }
+    }
+  }
+
+  &.plan-gold {
+    .price-header {
+      .plan-price {
+        color: $secondary-color-four;
+      }
+    }
+  }
+
+
+  &.plan-plutinum {
+    .price-header {
+      .plan-price {
+        color: $secondary-color-two;
+      }
+    }
+  }
+
+  .price-header {
+    position: relative;
+    padding: $padding-base;
+    @extend .text-center;
+    @include border-bottom($border-color);
+
+    .plan-name {
+      @extend .text-uppercase;
+      margin-top: 0;
+    }
+    .plan-price {
+      color: $sidebar-color;
+      span {
+        font-size: $font-size-base - 1;
+        position: relative;
+        top: -15px;
+        padding-right: $padding-10 - 5;
+        color: $base-font-color-light;
+      }
+      small {
+        font-size: $font-size-base;
+        color: $base-font-color-light;
+      }
+    }
+  }
+
+  .feature-lists {
+    @extend .list-unstyled;
+    padding: $padding-base;
+    @extend .text-center;
+
+    li {
+      padding: $padding-10 - 5 0;
+      color: darken($base-font-color-light, 20%);
+    }
+  }
+
+  .price-footer {
+    padding: $padding-base;
+    @include border-top($border-color);
+  }
+}

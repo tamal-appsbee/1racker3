@@ -1,0 +1,114 @@
+.an-pagination-container {
+  position: relative;
+  width: 100%;
+  padding: $padding-base 0 0;
+  @include display(flex);
+  @include justify-content(space-between);
+  @include align-items(center);
+  @media (max-width: $screen-sm) {
+    @include justify-content(flex-end);
+  }
+
+  &.center {
+    @include justify-content(center);
+  }
+
+  > a {
+    &.prev {
+      i {
+        padding-right: $padding-10;
+      }
+    }
+    &.next {
+      i {
+        padding-left: $padding-10 - 5;
+      }
+
+    }
+  }
+
+  &.center {
+    @include justify-content(center);
+  }
+
+  &.right {
+    @include justify-content(flex-end);
+  }
+
+  &.with-border-color {
+    .pagination {
+      li {
+        a {
+          border-color: $sidebar-color;
+          &:hover,
+          &.active {
+            background: $sidebar-color;
+            color: $font-color-white;
+          }
+        }
+      }
+    }
+  }
+
+  &.with-bg-color {
+    &.secondary {
+      .pagination {
+        li {
+          a {
+            border-color: rgba($secondary-color-main, .2);
+            background: rgba($secondary-color-main, .2);
+            &:hover,
+            &.active {
+              background: $secondary-color-main;
+              color: $font-color-white;
+            }
+          }
+        }
+      }
+
+    }
+    .pagination {
+      li {
+
+        a {
+          border-color: rgba($sidebar-color, .2);
+          background: rgba($sidebar-color, .2);
+          &:hover,
+          &.active {
+            background: $sidebar-color;
+            color: $font-color-white;
+          }
+        }
+      }
+    }
+  }
+
+  p {
+    color: $base-font-color-light;
+    @media (max-width: $screen-sm) {
+      display: none;
+    }
+  }
+  button {
+    @media (max-width: $screen-sm) {
+      display: none;
+    }
+  }
+
+  .pagination {
+    margin: 0;
+    li {
+
+      a {
+        font-size: $font-size-base - 1;
+        color: $base-font-color;
+
+        &:hover,
+        &.active {
+          background: $sidebar-color;
+          color: $font-color-white;
+        }
+      }
+    }
+  }
+}

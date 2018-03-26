@@ -1,0 +1,144 @@
+.btn-group {
+  &.an-notifications-dropown {
+    position: relative;
+    &.messages {
+      .dropdown-menu {
+        @media (max-width: $screen-cs) {
+          right: auto;
+          left: -50px;
+          max-width: 270px;
+        }
+        .an-info-count {
+          &:before {
+            @media(max-width: $screen-cs) {
+              left: 50px;
+            }
+          }
+        }
+      }
+    }
+    &.notifications {
+      .dropdown-menu {
+        @media (max-width: $screen-cs) {
+          right: auto;
+          left: -20px;
+          max-width: 270px;
+        }
+        .an-info-count {
+          background-color: $secondary-color-main;
+
+          &:before {
+            @media(max-width: $screen-cs) {
+              left: 20px;
+            }
+          }
+
+          span {
+            background-color: darken($secondary-color-main , 10%);
+          }
+          &:before {
+            border-bottom: 10px solid $secondary-color-main;
+          }
+        }
+      }
+    }
+    &.profile {
+      .dropdown-menu {
+        top: 100%;
+        .an-info-count {
+          padding: $padding-small - 2;
+          background-color: $sidebar-color;
+          &:before {
+            right: $padding-base - 2;
+            border-bottom: 10px solid $sidebar-color;
+          }
+        }
+      }
+
+    }
+
+    .dropdown-menu {
+      right: -15px;
+      left: auto;
+      top: 130%;
+      max-width: 300px;
+      min-width: 240px;
+      float: right;
+      border: 0;
+      box-shadow: 0 6px 20px rgba($base-font-color-light, 0.4);
+      padding-bottom: 0;
+      padding-top: 0;
+      @include border-radius(2px);
+      @include transition;
+
+
+
+      // Notification heading design
+      .an-info-count {
+        position: relative;
+        background-color: $secondary-color-four;
+        padding: $padding-small - 5;
+        border-top-left-radius: 2px;
+        border-top-right-radius: 2px;
+        color: $font-color-white;
+        margin-bottom: 0;
+        @extend .text-center;
+
+        // notification counter
+        span {
+          margin-left: $margin-small - 5;
+          background-color: darken($secondary-color-four , 10%);
+          width: 25px;
+          height: 25px;
+          display: inline-block;
+          line-height: 25px;
+          @include border-radius(50%);
+
+        }
+
+        // triangle
+        &:before {
+          content: '';
+          position: absolute;
+          top: -10px;
+          right: 15px;
+          width: 0;
+          height: 0;
+          border-left: 10px  solid transparent;
+          border-right: 10px  solid transparent;
+          border-bottom: 10px  solid $secondary-color-four;
+
+
+        }
+      }
+    }
+  }
+}
+
+.an-profile-settings {
+  .an-profile-list {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    padding-top: $padding-10;
+    padding-bottom: $padding-base;
+    list-style: none;
+
+    li {
+      position: relative;
+
+      a {
+        display: block;
+        padding: $padding-10 - 6 $padding-small;
+        i {
+          position: relative;
+          top: 4px;
+          margin-right: $margin-small;
+          font-size: $font-size-base + 11;
+        }
+      }
+    }
+  }
+}
+
+

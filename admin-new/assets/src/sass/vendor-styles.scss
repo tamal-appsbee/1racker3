@@ -1,0 +1,49 @@
+/*  @import plugin files
+ *   Bootstrap
+ *   Ionicons
+ */
+
+
+@import 'bootstrap';
+
+@import './vendors/ionicons/ionicons';
+@import './vendors/custom-icon/custom-icon';
+
+// scrollbar
+@import './vendors/scrollbar/scrollbar';
+
+// Bootstrap dtaerange picker
+@import './vendors/bs-daterangepicker/daterangepicker';
+
+// Selectize custom select box
+@import './vendors/selectize/selectize';
+
+// Owl carouse box
+@import './vendors/owl-carousel/owl.carousel.scss';
+@import './vendors/owl-carousel/owl.theme.scss';
+
+// full calendar
+@import './vendors/fullcalendar/fullcalendar';
+
+
+// Sweet Alerts
+@import './vendors/sweetalert/sweetalert';
+
+// Switch box
+@import './vendors/lc-switch/lc_switch';
+
+//  Bootstrap switch
+@import './vendors/bs-switch/bootstrap-switch';
+
+// Ion range slider
+@import './vendors/ionrange/ion.rangeSlider';
+@import './vendors/ionrange/ion.rangeSlider.skinFlat';
+
+// Bootstrap date time picker
+@import './vendors/bootstrap-datetime/bootstrap-datetimepicker-build';
+
+// Bootstrap file input
+@import "./vendors/fileinput/fileinput";
+
+// countdown timer
+@import './vendors/countdown/jquery.countdownTimer';

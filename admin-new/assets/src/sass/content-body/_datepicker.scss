@@ -1,0 +1,172 @@
+.an-daterange-picker {
+  position: relative;
+  padding: $padding-10 - 5 $padding-small $padding-10 - 2;
+  cursor: pointer;
+  color: $link-color;
+  @include border(lighten($base-font-color-light, 10%));
+  @include border-radius($border-radius-base);
+
+  @media (max-width: $screen-sm) {
+    margin-top: $margin-small;
+    width: 100%;
+  }
+
+  .pull-right {
+    @media (max-width: $screen-sm) {
+      float: none;
+    }
+  }
+}
+#reportrange {
+  i {
+    font-size: 18px;
+    position: relative;
+    top: 2px;
+  }
+}
+
+
+// Range picker button redesign
+.ranges {
+  li {
+    background: transparent;
+    color: $base-font-color;
+    margin-bottom: $margin-10 - 5;
+    @include transition(.3s);
+    @extend
+      .an-btn,
+      .an-btn-transparent,
+      .fluid,
+      .rounded,
+      .uppercase,
+      .small-font;
+
+    &.active {
+      background: $sidebar-color;
+      border-color: $sidebar-color;
+
+    }
+  }
+}
+
+// trigger button apply and cancel
+.range_inputs {
+  button {
+    color: $base-font-color;
+    background: transparent;
+    width: 49%;
+    @include transition(.3s);
+    @extend
+      .an-btn,
+      .an-btn-transparent,
+      .rounded,
+      .uppercase,
+      .small-font;
+
+    &.applyBtn {
+      &:hover {
+        background: $btn-success-bg;
+        border-color: $btn-success-bg;
+      }
+    }
+    &.cancelBtn {
+      &:hover {
+        background: $btn-danger-bg;
+        border-color: $btn-danger-bg;
+      }
+    }
+  }
+}
+
+
+// calender input style
+.daterangepicker {
+  .input-mini {
+    outline:0;
+    &.active,
+    &:active,
+    &:focus {
+      border-color: $sidebar-color;
+    }
+  }
+}
+
+
+// Calender custom design
+.daterangepicker td {
+  height: 35px;
+  width: 35px;
+  @include border-radius(50%);
+
+  &.active {
+    &.available {
+      &:hover {
+        background: darken($sidebar-color, 5%);
+      }
+    }
+  }
+
+  &.available {
+    &:hover {
+      background: rgba($sidebar-color, .5);
+    }
+  }
+
+
+  &.start-date {
+    &.active {
+      border-top-left-radius: 30px;
+      border-bottom-left-radius: 30px;
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
+    }
+  }
+
+  &.end-date {
+    &.active {
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0;
+      border-top-right-radius: 30px;
+      border-bottom-right-radius: 30px;
+    }
+  }
+
+  &.start-date.end-date {
+    @include border-radius(50%);
+    &.active {
+      &:hover {
+        background: darken($sidebar-color, 5%);
+      }
+    }
+  }
+
+
+
+  &.in-range {
+    background: rgba($sidebar-color, .3);
+  }
+
+  &.active {
+    background-color: $sidebar-color;
+    @include border-radius(50%);
+  }
+}
+
+
+.daterangepicker th {
+  width: 35px;
+  height: 35px;
+  line-height: 35px;
+  @include border-radius(50%);
+
+  &.next.available,
+  &.prev.available{
+    &:hover {
+      background: rgba($sidebar-color, .3);
+    }
+  }
+}
+
+.dropdown-menu {
+    box-shadow: 0 0 20px 2px rgba(204, 204, 204, 0.4);
+}

@@ -1,0 +1,29 @@
+.an-footer {
+  position: relative;
+  padding: $padding-10 0;
+  background: $body-bg;
+  @extend .text-center;
+
+  h4 {
+    @extend .text-uppercase;
+    color: $base-font-color-light;
+    font-size: $font-size-h5;
+
+    i {
+      color: $secondary-color-four;
+    }
+
+    a {
+      color: $base-font-color-light;
+      &:hover {
+        color: $link-color;
+      }
+    }
+  }
+
+  p {
+    color: $base-font-color-light;
+    font-size: $font-size-base - 1;
+    margin: 0;
+  }
+}

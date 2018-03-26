@@ -1,0 +1,45 @@
+.an-small-doc-blcok {
+  position: relative;
+  padding: $padding-10;
+  padding-left: $padding-base + 5;
+  background: rgba($secondary-color-main, .1);
+  margin-bottom: $margin-10;
+
+  &:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 4px;
+    height: 100%;
+    background: $secondary-color-main;
+  }
+
+  &.primary {
+    background: rgba($sidebar-color, .1);
+    &:before {
+      background: $sidebar-color;
+    }
+  }
+
+  &.info {
+    background: rgba($secondary-color-two, .1);
+    &:before {
+      background: $secondary-color-two;
+    }
+  }
+
+  &.warning {
+    background: rgba($secondary-color-four, .1);
+    &:before {
+      background: $secondary-color-four;
+    }
+  }
+
+}
+
+
+.alert {
+  border-radius: 0;
+  border: 0;
+}

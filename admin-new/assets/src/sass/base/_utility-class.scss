@@ -1,0 +1,251 @@
+.with-shadow {
+  box-shadow:0px 0px 0px 1px rgba(204, 204, 204, 0.1);
+  -webkit-box-shadow: 0px 0px 0px 1px rgba(204, 204, 204, 0.1);
+  -moz-box-shadow: 0px 0px 0px 1px rgba(204, 204, 204, 0.1);
+}
+
+.with-shadow-dark {
+  box-shadow:0px 0px 10px 1px rgba(204, 204, 204, 0.2);
+  -webkit-box-shadow: 0px 0px 10px 1px rgba(204, 204, 204, 0.2);
+  -moz-box-shadow: 0px 0px 10px 1px rgba(204, 204, 204, 0.2);
+}
+
+.white-bg {
+  background: $white;
+}
+
+.space-between {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+}
+
+.an-helper-block {
+  position: relative;
+  padding: $padding-small;
+
+  select,
+  .an-default-select-wrapper,
+  .an-form-control {
+    margin-bottom: 20px;
+  }
+
+
+  .an-switch-box-wrapper,
+  .an-bs-switch-wrapper {
+    display: inline-block;
+    margin-right: $margin-10;
+  }
+
+  > span {
+    margin-right: $margin-10;
+  }
+
+  > button {
+    margin-bottom: $margin-10;
+    margin-right: $margin-10;
+  }
+
+  .alert {
+    margin-bottom: 0;
+  }
+
+}
+
+.an-small-doc-blcok {
+  position: relative;
+  padding: $padding-10;
+  padding-left: $padding-base + 5;
+  background: rgba($secondary-color-main, .1);
+  margin-bottom: $margin-10;
+
+  &:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 4px;
+    height: 100%;
+    background: $secondary-color-main;
+  }
+}
+
+.an-scrollable-x {
+  position: relative;
+  width: 100%;
+  overflow-x: auto;
+}
+
+.max-height270 {
+  max-height: 270px !important;
+}
+
+
+
+.padding20 {
+  padding: $padding-base;
+}
+
+.padding30 {
+  padding: $padding-large;
+}
+
+.mt10 {
+  margin-top: $padding-10;
+}
+
+
+.basis-10 {
+  width: 10%;
+}
+.basis-20 {
+  width: 20%;
+}
+
+.basis-30 {
+  width: 30%;
+}
+
+.basis-40 {
+  width: 40%;
+}
+
+.basis-50 {
+  width: 50%;
+}
+
+
+
+// background color container specific color
+.primary-bg {
+  background: $sidebar-color;
+}
+.secondary-bg {
+  background: $secondary-color-main;
+}
+
+.secondary-bg-two {
+  background: $secondary-color-two;
+}
+
+.secondary-bg-three {
+  background: $secondary-color-three;
+}
+
+.secondary-bg-four {
+  background: $secondary-color-four;
+}
+
+// circle border radius
+
+
+// increase [
+
+.increase {
+  color: $secondary-color-main;
+}
+
+.decrease {
+  color: $secondary-color-four;
+}
+
+
+
+.overlay-utility {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  z-index: 10;
+}
+
+
+// time desc
+
+.an-time {
+  color: #cccccc;
+  font-size: 12px;
+
+  i {
+    position: relative;
+    top: 2px;
+    margin-right: 5px;
+    font-size: 15px;
+  }
+}
+
+
+
+
+// seme inbox icon color
+.inbox-color {
+  color: #4040C0;
+  font-size: $padding-base !important;
+}
+
+.sent-color {
+  color: #f02479;
+}
+
+.draft-color {
+  color: #004080;
+}
+
+.trash-color {
+  color: #C04000;
+}
+
+.fav-color {
+  color: #40C000;
+}
+
+
+.main {
+  color: $sidebar-color;
+}
+
+.s-main {
+  color: $secondary-color-main;
+}
+
+.s-two {
+  color: $secondary-color-two;
+}
+
+.s-three {
+  color: $secondary-color-three;
+}
+
+.s-four {
+  color: $secondary-color-four;
+}
+
+
+
+
+// user image
+.user-img {
+  display: block;
+  @include border-radius(50%);
+}
+
+
+
+// hightlighted text
+
+.an-highlight {
+  &.default {
+    background: rgba($sidebar-color, .3);
+  }
+}
+
+
+// flex center center
+.an-flex-center-center {
+  @include display(flex);
+  @include justify-content(center);
+  @include align-items(center);
+  width: 100%;
+  flex-direction: column;
+}

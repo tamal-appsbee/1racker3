@@ -1,0 +1,46 @@
+.label {
+  padding: $padding-10 - 7 $padding-10 - 4;
+  font-weight: normal;
+  color: $font-color-white;
+  @include border-radius(30px);
+
+  &.label-default {
+    background: $base-font-color-light;
+  }
+
+  &.label-primary {
+    background: $sidebar-color;
+  }
+
+  &.label-success {
+    background: $secondary-color-main;
+  }
+
+  &.label-info {
+    background: $secondary-color-two;
+  }
+
+  &.label-warning {
+    background: $secondary-color-four;
+  }
+
+  &.label-bordered {
+    @include border-radius($border-radius-base);
+  }
+
+  &.label-square {
+    @include border-radius(0);
+  }
+
+  &.label-medium {
+    padding: $padding-10 - 5 $padding-10;
+    font-size: $font-size-base;
+  }
+
+  &.label-large {
+    padding: $padding-10 $padding-small;
+    font-size: $font-size-base + 1;
+  }
+
+
+}

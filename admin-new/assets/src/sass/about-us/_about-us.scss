@@ -1,0 +1,20 @@
+.an-about-us {
+  position: relative;
+  width: 100%;
+  padding: $padding-base * 2 0;
+  margin-bottom: $margin-base * 2;
+
+  .an-title-xs {
+    @extend .text-center;
+    margin-bottom: $margin-base * 2;
+  }
+}
+
+.an-about-us-text {
+  @extend .text-center;
+  max-width: 750px;
+  margin: 0 auto;
+  font-size: $font-size-h4;
+  color: darken($base-font-color-light, 15%);
+  margin-bottom: $margin-base * 2;
+}

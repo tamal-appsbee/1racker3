@@ -1,0 +1,24 @@
+.an-feeds-content {
+  position: relative;
+  width: 100%;
+  max-height: 370px;
+
+  .an-info-single {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    .icon-container {
+      left: 15px;
+      top: 12px;
+      @include border-radius(0);
+
+      i {
+        font-size: $padding-base + 5;
+      }
+    }
+
+    .user-name {
+      padding: 0;
+    }
+  }
+}
+

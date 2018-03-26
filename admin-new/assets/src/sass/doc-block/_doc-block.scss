@@ -1,0 +1,23 @@
+.an-doc-block {
+  position: relative;
+  width: 100%;
+  padding: $padding-base + 5;
+  margin-bottom: $margin-small * 2;
+  border: 2px solid $sidebar-color;
+  background: $body-bg;
+  @include border-radius($border-radius-base);
+
+  p {
+    margin: 0;
+    font-size: $font-size-base + 1;
+
+    .doc-link {
+      color: $link-color;
+      text-decoration: underline;
+    }
+  }
+
+  &.default {
+    border: 2px solid $sidebar-color;
+  }
+}

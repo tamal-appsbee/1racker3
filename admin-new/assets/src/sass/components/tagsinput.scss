@@ -1,0 +1,45 @@
+.selectize-control {
+  &.an-tags-input  {
+    height: 35px;
+    @include border($base-font-color-light);
+    @include transition(all, .3s, ease);
+    @include border-radius(2px);
+
+    &.success {
+      .selectize-input {
+        .item {
+          background: rgba($secondary-color-main, .4);
+        }
+      }
+    }
+
+    &.info {
+      .selectize-input {
+        .item {
+          background: rgba($secondary-color-two, .4);
+        }
+      }
+    }
+
+    &.warning {
+      .selectize-input {
+        .item {
+          background: rgba($brand-warning, .4);
+        }
+      }
+    }
+
+    .selectize-input {
+      height: 100%;
+      border: 0;
+      box-shadow: none;
+      padding: 6px 10px 5px 10px;
+
+      .item {
+        @include border-radius($border-radius-base)
+        background: rgba($sidebar-color, .4);
+        padding: 1px 6px 3px 6px;
+      }
+    }
+  }
+}

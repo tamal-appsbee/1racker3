@@ -1,0 +1,274 @@
+/*
+=============================================
+Table of content
+
+1. Scaffolding
+2. Typography
+3. Forms
+4. Buttons
+5. General style
+6. Utility classes
+7. Custom select
+8. Owl carousel custom style
+9. Header
+1. Header left part
+2. Header right part
+10. Page content
+11. Sidebar
+1. Sidebar nav
+2. Sidebar search
+3. Sidebar widget
+12. Breadcrumb
+13. Datepicker
+14. Content body topbar
+15. Panel main info
+16. Single component
+17. Component header
+18. User list
+19. user stats
+20. user activity
+21. Activity single style
+22. Number widget
+23. Customer supports
+24. Feeds style
+25. Chart
+26. chart details
+27. Progressbar
+28. Tab style
+29. Pagination
+30. Recent user
+1. user iamge
+2. Social info
+31. chat
+32. Fullcalendar
+33. Maps
+34 Inbox
+35. Tables
+36. Ui styles
+37 Component style
+38. User profile
+39. Login
+40. Footer
+41. Contact us
+42. About us
+43. Pricing table
+44. blog
+45. Comment
+46. Page 4040
+47. Contruction
+48. Portfolio
+49. Loader
+
+=======================================
+ */
+
+// @import main variables file
+@import 'variables';
+@import 'mixins';
+/*  @import base  files for project initialization
+*   Scafolding
+*   typography
+*   forms
+*/
+
+@import "./vendors/bootstrap/variables";
+@import "./vendors/bootstrap/mixins";
+
+
+@import 'base/scaffolding';
+@import 'base/typography';
+@import 'base/forms';
+@import 'base/buttons';
+@import 'base/general';
+@import 'base/utility-class';
+@import 'base/custom-select';
+
+
+
+// owl custom slider
+@import './content-body/slider/owl-custom';
+
+
+
+
+//
+//  @import header files for header top bar style
+//   _header.scss hold some basic structure for top bar
+//   _header-left-part.scss file contain left section of topbar like logo, menu button, search field, add favorite button
+//   _header-right-part.scss file contain right section of  topbar notification , message user profile
+//
+
+@import 'topbar/header';
+@import 'topbar/header-left-part';
+@import 'topbar/header-right-part';
+
+//
+//  @import  page-content main file for universel stying
+//
+
+@import 'page-content/_page-content';
+
+//
+//  @import sidebar style from sidebar folder
+//   _sidebar-nav.scss for main-navigation
+//   _sidebar-profile.scss  for some profile info in sidebar
+//   _sidebar-widget.scss some widget area on sidebar if any
+//   _sidebar.scss some basic styling for sidebar
+//
+
+@import 'sidebar/_sidebar';
+@import 'sidebar/_sidebar-nav';
+@import 'sidebar/_sidebar-search';
+@import 'sidebar/_sidebar-widgets';
+
+
+//
+// @import main content-body style
+// _breadcrumb.scss file used for dashboard breadcrumb
+// _datepicker.scss file used for customize bootstrap daterange picker
+// _body-content-topbar.scss file used for styling body topbar information
+//
+//
+
+@import 'content-body/_breadcrumb';
+@import 'content-body/_datepicker';
+@import 'content-body/_content-body-topbar';
+
+
+//
+// @import _panel-main-info.scss
+// main info widget style
+//
+//
+
+@import 'content-body/panel-main-info/_panel-main-info';
+
+
+//
+// @import _single-component.scss
+// Style for basic component content main layout
+//
+
+@import 'content-body/single-component/_single-component';
+@import 'content-body/single-component/_component-header';
+// import user lists scss file that containe all user related single component like message, user stats etc.
+@import 'content-body/user-lists/user-lists';
+@import 'content-body/user-lists/user-stats';
+
+
+// User activity
+@import 'content-body/user-activity/user-activity';
+@import 'content-body/user-activity/activity-single';
+
+// number static
+@import 'content-body/widget-number/number-widget';
+
+// Customer support
+@import 'content-body/customer-supports/customer-supports';
+
+// Feeds
+@import 'content-body/feeds/feeds';
+
+// Chart configuration
+@import 'chart/chart';
+@import 'chart/chart-details';
+
+// Progressbar configuration mainly circle progressbar
+@import 'progressbar/progressbar-content';
+
+// Bootstrap tab customization
+@import 'tabs/tabstyle';
+
+
+// bootstarp pagination customization
+@import 'pagination/pagination';
+
+
+
+//  recent user sections
+@import 'recent-user/recent-user';
+@import 'recent-user/user-image';
+@import 'recent-user/social-info';
+
+
+
+// Customer support
+@import 'content-body/chat/chat';
+
+
+// Fullcalendar custom style
+@import 'fullcalendar/fullcalendar-custom';
+
+
+// Doc block for vendors plugin
+@import 'doc-block/doc-block';
+
+
+// Goggle map
+@import 'maps/maps';
+
+// Inbox style
+@import 'inbox/inbox';
+
+// custom table design
+@import 'tables/tables';
+
+
+
+// Ui layouts style
+@import 'ui-layouts/ui-badges';
+@import 'ui-layouts/ui-labels';
+@import 'ui-layouts/ui-notes';
+@import 'ui-layouts/ui-progressbar';
+@import 'ui-layouts/ui-misc';
+@import 'ui-layouts/ui-accordion';
+@import 'ui-layouts/ui-sweetalerts';
+@import 'ui-layouts/ui-socials';
+@import 'ui-layouts/ui-notifications';
+@import 'ui-layouts/ui-modals';
+
+
+// Component layouts style
+@import 'components/switch';
+@import 'components/tagsinput';
+
+
+// User profile layout
+@import 'user-profile/user-profile';
+
+// Login style
+@import 'login/login';
+
+// Page title
+@import 'page-title/page-title';
+
+// footer
+@import 'footer/footer';
+
+// contact page
+@import 'contact-us/contact-us';
+
+// aobut page
+@import 'about-us/about-us';
+
+// Pricing table
+@import 'pricing/pricing-table';
+
+// blog
+@import 'blog/blog';
+
+// comment
+@import 'comment/comment';
+
+// page 404
+@import '404/page-404';
+
+// Page construction
+@import 'construction/construction';
+
+
+// Page portfolio
+@import 'portfolio/portfolio';
+
+// page loader
+@import 'page-loader/loader';

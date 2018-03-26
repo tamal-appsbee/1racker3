@@ -1,0 +1,42 @@
+.badge {
+  padding: $padding-10 - 7 $padding-10 - 4;
+  font-weight: normal;
+
+  &.badge-default {
+    background: $base-font-color-light;
+  }
+
+  &.badge-primary {
+    background: $sidebar-color;
+  }
+
+  &.badge-success {
+    background: $secondary-color-main;
+  }
+
+  &.badge-info {
+    background: $secondary-color-two;
+  }
+
+  &.badge-warning {
+    background: $secondary-color-four;
+  }
+
+  &.badge-bordered {
+    @include border-radius($border-radius-base);
+  }
+
+  &.badge-square {
+    @include border-radius(0);
+  }
+
+  &.badge-medium {
+    padding: $padding-10 - 5 $padding-10;
+    font-size: $font-size-base;
+  }
+
+  &.badge-large {
+    padding: $padding-10 $padding-small;
+    font-size: $font-size-base + 1;
+  }
+}

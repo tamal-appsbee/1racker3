@@ -1,0 +1,41 @@
+.sa-confirm-button-container {
+  .confirm {
+    @extend .an-btn;
+    @extend .an-btn-primary;
+    background: $sidebar-color !important;
+    box-shadow: none !important;
+
+  }
+}
+
+.sa-button-container {
+  .cancel {
+    @extend .an-btn;
+    @extend .an-btn-danger;
+    background: $secondary-color-four !important;
+    box-shadow: none !important;
+  }
+}
+
+.sweet-alert .sa-icon.sa-success .sa-placeholder {
+  border-color: rgba($sidebar-color, .2);
+}
+
+.sweet-alert .sa-icon.sa-success .sa-line {
+  background: $sidebar-color;
+}
+
+.sweet-alert .sa-icon.sa-success {
+  border-color: $sidebar-color;
+}
+
+
+.sweet-alert .sa-input-error {
+  top: 22px;
+  right: 10px;
+}
+
+.sweet-alert input:focus {
+  box-shadow: 0px 0px 3px rgba($sidebar-color, .2) !important;
+  border-color: rgba($sidebar-color, .4) !important;
+}

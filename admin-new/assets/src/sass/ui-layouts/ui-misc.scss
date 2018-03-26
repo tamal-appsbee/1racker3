@@ -1,0 +1,11 @@
+.panel {
+  @include border-radius($border-radius-base);
+}
+
+.an-blockquote-primary {
+  border-color: $sidebar-color;
+
+  &.blockquote-reverse {
+    border-color: $sidebar-color;
+  }
+}

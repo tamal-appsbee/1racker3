@@ -1,0 +1,49 @@
+.an-progressbar-content {
+  position: relative;
+  width: 100%;
+  padding: $padding-base + 5;
+  @include text-align(center);
+
+
+  .ancircleprogressbar {
+    position: relative;
+    @include display(inline-block);
+
+    canvas {
+      position: relative;
+      z-index: 10;
+    }
+
+    .value {
+      position: absolute;
+      z-index: 1;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      @include display(flex);
+      @include flex-direction(column);
+      @include justify-content(center);
+      @include border-radius(50%);
+      @include text-align(center);
+
+      &.with-bg {
+        background: url('../img/progressbg.png') bottom center no-repeat;
+        background-size: 100% 83%;
+        top: -5px;
+      }
+
+      div {
+        font-size: $font-size-h2;
+        font-weight: $font-weight-bold;
+
+      }
+
+      span {
+        color: $base-font-color-light;
+        font-size: $font-size-base - 1;
+        @extend .text-uppercase;
+      }
+    }
+  }
+}

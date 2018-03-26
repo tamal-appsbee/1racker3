@@ -1,0 +1,30 @@
+.an-breadcrumb {
+  position: relative;
+  width: 100%;
+  margin-bottom: $padding-small * 2;
+
+  .breadcrumb {
+    background-color: transparent;
+    padding: 0;
+    margin-bottom: 0;
+
+    li {
+      position: relative;
+      @media (max-width: $screen-xs) {
+        font-size: $font-size-base - 2;
+      }
+
+      a {
+        color: $link-color;
+        &:hover {
+          color: darken($link-color, 5%);
+        }
+      }
+
+      &.active {
+        color: $base-font-color-light;
+      }
+
+    }
+  }
+}

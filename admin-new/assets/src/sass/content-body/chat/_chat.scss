@@ -1,0 +1,83 @@
+.chat-container {
+  position: relative;
+  width: 100%;
+  padding: $padding-small;
+  padding-bottom: 0;
+
+  .an-chat-form {
+    position: relative;
+    padding: $padding-base;
+    margin-left: -$margin-small;
+    margin-right: -$margin-small;
+    background: $bg-body;
+
+    .an-form-control {
+      background: $body-bg;
+      margin-bottom: 0;
+    }
+
+  }
+
+  &.chat-page {
+    .an-lists-body {
+      max-height: 511px;
+    }
+
+  }
+
+  .an-lists-body {
+     max-height: 660px;
+  }
+  .list-user-single {
+    padding: $padding-small $padding-10 * 6;
+    @include display(block);
+
+    &:before {
+      content: "";
+      position: absolute;
+      width: 2px;
+      height: calc(100% - 30px);
+    }
+
+    &.send-message {
+      &:before {
+        right: 18px;
+        background: $sidebar-color;
+      }
+      .image {
+        position: absolute;
+        left: 0;
+        margin: 0;
+      }
+    }
+
+    &.recieve-message {
+      &:before {
+        left: 18px;
+        background: $secondary-color-main;
+      }
+      .image {
+        position: absolute;
+        right: 0;
+        margin: 0;
+      }
+    }
+
+    .list-name {
+      @include display(block);
+      margin-bottom: $margin-10;
+
+      a {
+        font-weight: $font-weight-regular;
+        font-size: $font-size-base + 1;
+        span {
+          margin-left: $margin-10  - 5;
+        }
+      }
+    }
+
+    .comment {
+      color: $base-font-color-light;
+    }
+  }
+}

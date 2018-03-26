@@ -1,0 +1,11 @@
+.an-4040-page {
+  position: relative;
+  width: 100%;
+  @extend .text-center;
+  padding: $padding-base * 4 0;
+
+  h1 {
+    font-size: $font-size-h1 * 2;
+    margin: 0;
+  }
+}

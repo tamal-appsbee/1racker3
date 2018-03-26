@@ -1,0 +1,114 @@
+.an-chart-content {
+  position: relative;
+  width: 100%;
+  padding: $padding-small;
+  &.doughnut {
+    padding: $padding-10 * 4 + 2;
+  }
+
+  canvas {
+    width: 100%;
+    //height: 400px;
+    position: relative;
+    z-index: 10;
+  }
+
+  .an-chart-details  {
+    position: relative;
+    widht: 100%;
+    padding-left: $padding-base;
+    padding-right: $padding-base;
+    margin-bottom: $margin-base;
+    @include border-bottom($border-color);
+    @include display(flex);
+    div {
+      height: 100px;
+      width: 50%;
+      display: flex;
+      text-align: center;
+      align-items: center;
+      justify-content: center;
+      &.right {
+        border-left: 1px solid $border-color;
+      }
+
+      h3 {
+        font-weight: $font-weight-bold;
+        margin: 0;
+        span {
+          display: block;
+          font-size: $font-size-base;
+          color: $base-font-color-light;
+          font-weight: normal;
+          @extend .text-uppercase;
+        }
+      }
+
+      p {
+        background: $secondary-color-main;
+        padding: $padding-10 - 5 $padding-small;
+        color: $font-color-white;
+        font-size: $font-size-h4;
+        @include border-radius($border-radius-base);
+      }
+    }
+  }
+}
+
+
+.chart-legend {
+  position: relative;
+  padding-top: $padding-10;
+  &.doughnut {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    ul {
+      li {
+        &:first-child {
+          position: absolute;
+          top: 20px;
+          right: 20px;
+        }
+        &:last-child {
+          position: absolute;
+          top: 20px;
+          left: 20px;
+        }
+        &:nth-child(even) {
+          position: absolute;
+          bottom: 20px;
+          left: 20px;
+        }
+        &:nth-child(odd) {
+          position: absolute;
+          bottom: 20px;
+          right: 20px;
+        }
+      }
+    }
+  }
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    @include display(flex);
+    @include justify-content(space-around);
+
+    li {
+      span {
+        display: inline-block;
+        position: relative;
+        top: 2px;
+        width: 12px;
+        height: 12px;
+        @include border-radius(50%);
+        margin-right: 5px;
+      }
+    }
+  }
+}
+
+

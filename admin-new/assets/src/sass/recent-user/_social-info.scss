@@ -1,0 +1,90 @@
+.social-info {
+  position: absolute;
+  left: -45px;
+  top: 0;
+  width: 45px;
+  height: 100%;
+  background: rgba(0,0,0, .6);
+  z-index: 15;
+  @include display(flex);
+  @include flex-direction(column);
+  @include align-items(center);
+  @include transition(.3s);
+
+  &.fixed-left {
+    left: 0;
+  }
+
+  &.with-color {
+    a {
+      &.facebook {
+        background: $an-facebook;
+      }
+      &.twitter {
+        background: $an-twitter;
+      }
+
+      &.google {
+        background: $an-google;
+      }
+
+      &.dribble {
+        background: $an-dribble;
+      }
+    }
+
+  }
+
+  a {
+    color: $font-color-white;
+    font-size: $font-size-base + 4;
+    width: 100%;
+    @include display(flex);
+    @include flex-grow(1);
+    @include align-items(center);
+    @include justify-content(center);
+
+    &.facebook {
+      &:hover {
+        background: $an-facebook;
+      }
+    }
+
+    &.twitter {
+      &:hover {
+        background: $an-twitter;
+      }
+    }
+
+    &.google {
+      &:hover {
+        background: $an-google;
+      }
+    }
+
+    &.dribble {
+      &:hover {
+        background: $an-dribble;
+      }
+    }
+
+    &.reddit {
+      &:hover {
+        background: $an-reddit;
+      }
+    }
+
+    &.whatsapp {
+      &:hover {
+        background: $an-whatsapp;
+      }
+    }
+
+    &.pinterest {
+      &:hover {
+        background: $an-pinterest;
+      }
+    }
+
+  }
+}

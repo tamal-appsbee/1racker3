@@ -1,0 +1,108 @@
+.an-profile-banner {
+  position: relative;
+  width: 100%;
+  padding: $padding-base * 3 0;
+  display: block;
+  margin-bottom: $margin-base;
+
+  .an-profile-overlay {
+    @extend .overlay-utility;
+    background: rgba($black, .6);
+  }
+
+  .an-banner-content {
+    position: relative;
+    width: 100%;
+    padding: $padding-small;
+
+    @media (min-width: $screen-sm) {
+      padding: 0 $padding-base * 3;
+    }
+  }
+
+  .profile-setting-btn {
+    position: absolute;
+    right: 30px;
+    bottom: 30px;
+    z-index: 10;
+  }
+}
+
+
+.an-profile-details {
+  position: relative;
+  z-index: 10;
+  @include display(flex);
+  @include justify-content(space-between);
+  @include align-items(flex-start);
+  @include flex-wrap(wrap);
+
+  .an-profile-left-part {
+    position: relative;
+    @media (max-width: $screen-md) {
+      margin-bottom: $margin-base;
+    }
+    .img-body {
+      position: relative;
+      width: 250px;
+      height: 250px;
+      @include display(block);
+    }
+    h3,
+    p {
+      color: $font-color-white;
+    }
+  }
+
+  .an-profile-section {
+    position: relative;
+    border-left: 1px dashed $font-color-white;
+    max-width: 300px;
+
+    @media (max-width: $screen-md) {
+      margin-bottom: $margin-base;
+    }
+
+    .user-information {
+      padding-left: $padding-small * 2;
+    }
+
+    h5 {
+      color: $font-color-white;
+      @extend .text-uppercase;
+      padding-bottom: $padding-10;
+    }
+
+    .info-single {
+      display: block;
+      padding-bottom: $padding-small;
+      p {
+        margin: 0;
+        &.light {
+          opacity: .6;
+        }
+        color: $font-color-white;
+      }
+    }
+  }
+}
+
+
+
+
+
+
+.an-user-settings {
+  position: relative;
+  width: 100%;
+
+  input {
+    margin-bottom: $margin-base;
+  }
+}
+
+
+.an-file-upload-container {
+  position: relative;
+  margin-bottom: $margin-base * 2;
+}
