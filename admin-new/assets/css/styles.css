@@ -259,10 +259,21 @@ p {
   font-weight: 300;
   line-height: 1.4; }
   
+  
+/* style new */  
 .an-logo-link img { width:70px;}
 button i.icon-list {font-size: 41px;}
 .list-user-single img { width:40px;}
-  
+.dasboard_list a:hover { background:#f9f9f9; display:inherit;}
+.vehicle_main .an-profile-left-part h2 { margin:0;}
+.vehicle_main .an-profile-left-part .pull-right { margin-left:20px;}
+.vehicle_main p, .vehicle_main h5 { color:#333 !important; padding:0!important; margin: 0 0 8px 0;}
+.vehicle_main .an-profile-details .an-profile-section .info-single { padding-bottom: 5px!important;}
+.map_section .an-map-content { position:relative;}
+.map_section .an-map-content .street-view { position:absolute; bottom:15px; right:60px; width:300px; height: 190px; cursor:pointer;}
+.map_section .an-map-content .street-view img { width:100%; border:1px solid #9c9c9c;}
+
+
   @media (min-width: 768px) {
     .lead {
       font-size: 21px; } }
