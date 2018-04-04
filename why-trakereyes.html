@@ -47,6 +47,22 @@ jQuery(document).ready(function(){
 $( document ).ready(function(){
   $(".button-collapse").sideNav();
 });
+$(document).ready(function () {
+    $(".content").hide();
+    $(".show_hide").on("click", function () {
+        var txt = $(".content").is(':visible') ? 'More' : 'Less';
+        $(".show_hide").text(txt);
+        $(this).prev('.content').slideToggle(200);
+    });
+});
+$(document).ready(function () {
+    $(".content2").hide();
+    $(".show_hide2").on("click", function () {
+        var txt = $(".content2").is(':visible') ? 'More' : 'Less';
+        $(".show_hide2").text(txt);
+        $(this).prev('.content2').slideToggle(200);
+    });
+});
 </script>
 </head>
 
@@ -133,7 +149,8 @@ $( document ).ready(function(){
         <ul class="benefits-group_list">
           <li class="benefits-group_item">
             <p class="benefits-group_description">In today’s world, there are very few people who sit back in their homes and do not commute. In the 21st Century, most people have their own cars. However, the larger section of the population still avails public transport. This calls for a secure and cost-effective transportation system aimed to be achieved through scientifically designed vehicle tracking mechanisms.  There are people who try to do illegal activities on roads like stealing cars or abducting kids. In this scenario, the Vehicle Tracking System can be useful as this will help officials to track the car and its activities like where it is going or where it is stopping for how long and by gathering this information, they can identify the people who tried fleeing with the vehicle. Also with the tracking system, parents can also keep a track of their children where they are going without even letting their children know about this fact.</p>
-            <p class="benefits-group_description">With a large number of vehicles moving through the bustling streets of cities and towns, it’s extremely vital to ensure the safety of the present and future transportation systems. Vehicle Tracking Systems have come up with mechanisms and concepts that give all-round protection and security to vehicles and individuals on roads.</p>
+            <p class="benefits-group_description content">With a large number of vehicles moving through the bustling streets of cities and towns, it’s extremely vital to ensure the safety of the present and future transportation systems. Vehicle Tracking Systems have come up with mechanisms and concepts that give all-round protection and security to vehicles and individuals on roads.</p>
+			<a href="javascript:void(0)" class="show_hide line" data-content="toggle-text">More</a>
           </li>
         </ul>
        </div>
@@ -241,8 +258,11 @@ $( document ).ready(function(){
         <ul class="benefits-group_list">
           <li class="benefits-group_item">
             <p class="benefits-group_description">With centralized vehicle tracking systems using methodologies like Radio-frequency identification (RFID), global positioning system(GPS) and GSM, commuters can safely rely on the data provided as these come from a trustworthy source. There will be lesser chances of unauthorized vehicles moving around in cities with automated SMS alerts after ignition of any unauthorized vehicle. The concept of real-time tracking helps commuters experience secure trips with centralized geo-location. This makes them less susceptible to vehicle thefts and illegal practices on road. CCTV Tracking Systems provide an additional coverage of protection to vehicle movements.</p>
+            <div class="content2">
             <p class="benefits-group_description">A revolution is soon to happen in the transport industry with the advent of self-driven automated machine cars run without human drivers. These cars can be tracked by centralized GPS systems and provide better performance with automated sensors and speed regulators. An AI integrated traffic system may have cars and buses that can auto-detect traffic signals and thus, seamlessly move on roads. This may reduce traffic jams to a great extent.</p>
             <p class="benefits-group_description">Thus, with the implementation of advanced vehicle tracking systems, the future hopes to see sophisticated transport networks digitally monitored through security and price-control modules. Simultaneous tracking of multiple vehicles through a central body will not only reduce traffic congestions and annoying waiting hours on roads and buses but will enhance the overall traffic experience of the customers by rendering personalized as well as aggregate commutation details.  As the saying goes, ‘Safety comes first’, our security needs to monitored right from the moment we step out of our houses and board the bus to the time we reach our destination. Thus, Vehicle Tracking Systems are inevitable in the super first lifestyles of the modern century.</p>
+          	</div>
+            <a href="javascript:void(0)" class="show_hide2 line" data-content="toggle-text">More</a>
           </li>
         </ul>
        </div>
