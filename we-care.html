@@ -47,6 +47,14 @@ jQuery(document).ready(function(){
 $( document ).ready(function(){
   $(".button-collapse").sideNav();
 });
+$(document).ready(function () {
+    $(".content").hide();
+    $(".show_hide").on("click", function () {
+        var txt = $(".content").is(':visible') ? 'More' : 'Less';
+        $(".show_hide").text(txt);
+        $(this).prev('.content').slideToggle(200);
+    });
+});
 </script>
 </head>
 
@@ -136,12 +144,13 @@ $( document ).ready(function(){
             <h5 class="benefits-group_title">Sensitive tracking data will be stored in blockchain.</h5>
             <p class="benefits-group_description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
           </li>
-          <li class="benefits-group_item">
+          <li class="benefits-group_item content">
             <h5 class="benefits-group_title">Award-winning customer service.</h5>
             <p class="benefits-group_description">
                 <span class="orphan-removal">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.</span>
             </p>
           </li>
+          <a href="javascript:void(0)" class="show_hide line" data-content="toggle-text">More</a>
         </ul>
        </div>
         

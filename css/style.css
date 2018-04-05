@@ -343,8 +343,8 @@ td.condensed h2 {margin-top: 0; font-weight: 400; color: #343434; font-size: 20p
     -webkit-animation: swinging 3.5s ease-in-out forwards infinite;
     animation: swinging 3.5s ease-in-out forwards infinite;
 }
-
-
+.masterTooltip:hover { opacity:0.7;}
+.tooltip {display:none;	position:absolute; border:1px solid #eee; background-color:#fff; border-radius:3px;	padding:3px 10px; color:#999; font-size:12px; box-shadow:2px 2px 5px #ccc;}
 
 
 

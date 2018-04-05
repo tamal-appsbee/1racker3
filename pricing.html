@@ -47,7 +47,29 @@ jQuery(document).ready(function(){
 $( document ).ready(function(){
   $(".button-collapse").sideNav();
 });
+$(document).ready(function() {
+// Tooltip only Text
+$('.masterTooltip').hover(function(){
+        // Hover over code
+        var title = $(this).attr('title');
+        $(this).data('tipText', title).removeAttr('title');
+        $('<p class="tooltip"></p>')
+        .text(title)
+        .appendTo('body')
+        .fadeIn('slow');
+}, function() {
+        // Hover out code
+        $(this).attr('title', $(this).data('tipText'));
+        $('.tooltip').remove();
+}).mousemove(function(e) {
+        var mousex = e.pageX + 20; //Get X coordinates
+        var mousey = e.pageY + 10; //Get Y coordinates
+        $('.tooltip')
+        .css({ top: mousey, left: mousex })
+});
+});
 </script>
+
 </head>
 
 <body>
@@ -143,7 +165,7 @@ $( document ).ready(function(){
                 <tr>
                 <td class="border feature shadow no-border-right">
                 Tracking objects
-                <span class="tooltip9 tooltipstered"></span>
+                <span class="masterTooltip" title="Tracking objects"></span>
                 </td>
                 <td class="border device-number">1</td>
                 <td class="border device-number">1</td>
@@ -154,7 +176,7 @@ $( document ).ready(function(){
                 <tr>
                 <td class="border feature shadow no-border-right no-border-bottom">
                 Real-time tracking
-                <span class="tooltip1 tooltipstered"></span>
+                <span class="masterTooltip" title="Real-time tracking"></span>
                 </td>
                 <td class="border"><span class="checked"></span></td>
                 <td class="border"><span class="checked"></span></td>
@@ -165,7 +187,7 @@ $( document ).ready(function(){
                 <tr>
                 <td class="border feature shadow no-border-right no-border-bottom">
                 Mobile apps
-                <span class="tooltip7 tooltipstered"></span>
+                <span class="masterTooltip" title="Mobile apps"></span>
                 </td>
                 <td class="border"><span class="checked"></span></td>
                 <td class="border"><span class="checked"></span></td>
@@ -176,7 +198,7 @@ $( document ).ready(function(){
                 <tr>
                 <td class="border feature shadow no-border-right no-border-bottom">
                 Notifications
-                <span class="tooltip2 tooltipstered"></span>
+                <span class="masterTooltip" title="Notifications"></span>
                 </td>
                 <td class="border"><span class="unchecked"></span></td>
                 <td class="border"><span class="checked"></span></td>
@@ -187,7 +209,7 @@ $( document ).ready(function(){
                 <tr>
                 <td class="border feature shadow no-border-right no-border-bottom">
                 History and reports
-                <span class="tooltip3 tooltipstered"></span>
+                <span class="masterTooltip" title="History and reports"></span>
                 </td>
                 <td class="border"><span class="unchecked"></span></td>
                 <td class="border"><span class="checked"></span></td>
@@ -198,7 +220,7 @@ $( document ).ready(function(){
                 <tr>
                 <td class="border feature shadow no-border-right no-border-bottom">
                 Fuel savings
-                <span class="tooltip4 tooltipstered"></span>
+                <span class="masterTooltip" title="Fuel savings"></span>
                 </td>
                 <td class="border"><span class="unchecked"></span></td>
                 <td class="border"><span class="checked"></span></td>
@@ -209,7 +231,7 @@ $( document ).ready(function(){
                 <tr>
                 <td class="border feature shadow no-border-right no-border-bottom">
                 Geofencing
-                <span class="tooltip5 tooltipstered"></span>
+                <span class="masterTooltip" title="Geofencing"></span>
                 </td>
                 <td class="border"><span class="unchecked"></span></td>
                 <td class="border"><span class="checked"></span></td>
@@ -219,8 +241,8 @@ $( document ).ready(function(){
                 </tr>
                 <tr>
                 <td class="border feature shadow no-border-right no-border-bottom">
-                POI &amp; tools
-                <span class="tooltip6 tooltipstered"></span>
+                POI & tools
+                <span class="masterTooltip" title="POI & tools"></span>
                 </td>
                 <td class="border"><span class="unchecked"></span></td>
                 <td class="border"><span class="checked"></span></td>
@@ -231,7 +253,7 @@ $( document ).ready(function(){
                 <tr>
                 <td class="border feature shadow no-border-right no-border-bottom">
                 SMS gateway
-                <span class="tooltip10 tooltipstered"></span>
+                <span class="masterTooltip" title="SMS gateway"></span>
                 </td>
                 <td class="border"><span class="unchecked"></span></td>
                 <td class="border"><span class="unchecked"></span></td>
@@ -242,7 +264,7 @@ $( document ).ready(function(){
                 <tr>
                 <td class="border feature shadow no-border-right no-border-bottom">
                 Accessories and sensors
-                <span class="tooltip13 tooltipstered"></span>
+                <span class="masterTooltip" title="Accessories and sensors"></span>
                 </td>
                 <td class="border"><span class="unchecked"></span></td>
                 <td class="border"><span class="unchecked"></span></td>
@@ -252,8 +274,8 @@ $( document ).ready(function(){
                 </tr>
                 <tr>
                 <td class="border feature shadow no-border-right no-border-bottom">
-                Your domain &amp; logo
-                <span class="tooltip11 tooltipstered"></span>
+                Your domain & logo
+                <span class="masterTooltip" title="Your domain & logo"></span>
                 </td>
                 <td class="border"><span class="unchecked"></span></td>
                 <td class="border"><span class="unchecked"></span></td>
@@ -264,7 +286,7 @@ $( document ).ready(function(){
                 <tr>
                 <td class="border feature shadow no-border-right no-border-bottom">
                 API access
-                <span class="tooltip22 tooltipstered"></span>
+                <span class="masterTooltip" title="API access"></span>
                 </td>
                 <td class="border"><span class="unchecked"></span></td>
                 <td class="border"><span class="unchecked"></span></td>
@@ -275,7 +297,7 @@ $( document ).ready(function(){
                 <tr>
                 <td class="border feature shadow no-border-right no-border-bottom">
                 Branded apps
-                <span class="tooltip17 tooltipstered"></span>
+                <span class="masterTooltip" title="Branded apps"></span>
                 </td>
                 <td class="border"><span class="unchecked"></span></td>
                 <td class="border"><span class="unchecked"></span></td>
@@ -286,7 +308,7 @@ $( document ).ready(function(){
                 <tr>
                 <td class="border feature shadow no-border-right no-border-bottom">
                 Modify design
-                <span class="tooltip23 tooltipstered"></span>
+                <span class="masterTooltip" title="Modify design"></span>
                 </td>
                 <td class="border"><span class="unchecked"></span></td>
                 <td class="border"><span class="unchecked"></span></td>
@@ -297,7 +319,7 @@ $( document ).ready(function(){
                 <tr>
                 <td class="border feature shadow no-border-right no-border-bottom">
                 Charge your customers
-                <span class="tooltip16 tooltipstered"></span>
+                <span class="masterTooltip" title="Charge your customers"></span>
                 </td>
                 <td class="border"><span class="unchecked"></span></td>
                 <td class="border"><span class="unchecked"></span></td>
@@ -308,7 +330,7 @@ $( document ).ready(function(){
                 <tr>
                 <td class="border feature shadow no-border-right no-border-bottom">
                 Add custom features
-                <span class="tooltip20 tooltipstered"></span>
+                <span class="masterTooltip" title="Add custom features"></span>
                 </td>
                 <td class="border"><span class="unchecked"></span></td>
                 <td class="border"><span class="unchecked"></span></td>
@@ -319,7 +341,7 @@ $( document ).ready(function(){
                 <tr>
                 <td class="border feature shadow no-border-right no-border-bottom">
                 Admin tools
-                <span class="tooltip12 tooltipstered"></span>
+                <span class="masterTooltip" title="Admin tools"></span>
                 </td>
                 <td class="border"><span class="unchecked"></span></td>
                 <td class="border"><span class="unchecked"></span></td>
@@ -330,7 +352,7 @@ $( document ).ready(function(){
                 <tr>
                 <td class="border feature shadow no-border-right no-border-bottom">
                 Unlimited accounts
-                <span class="tooltip15 tooltipstered"></span>
+                <span class="masterTooltip" title="Unlimited accounts"></span>
                 </td>
                 <td class="border"><span class="unchecked"></span></td>
                 <td class="border"><span class="unchecked"></span></td>
@@ -341,7 +363,7 @@ $( document ).ready(function(){
                 <tr>
                 <td class="border feature shadow no-border-right no-border-bottom">
                 Database backup
-                <span class="tooltip18 tooltipstered"></span>
+                <span class="masterTooltip" title="Database backup"></span>
                 </td>
                 <td class="border"><span class="unchecked"></span></td>
                 <td class="border"><span class="unchecked"></span></td>
@@ -352,7 +374,7 @@ $( document ).ready(function(){
                 <tr>
                 <td class="border feature shadow no-border-right">
                 Technical support
-                <span class="tooltip14 tooltipstered"></span>
+                <span class="masterTooltip" title="Technical support"></span>
                 </td>
                 <td class="border support">Normal</td>
                 <td class="border support">Normal</td>
