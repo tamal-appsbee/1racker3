@@ -72,8 +72,8 @@ header .dropdown-content li:hover { background:none;}
 header nav { background:#fff!important; height:69px !important;}
 header nav a.button-collapse {display: none;}
 
-.logo { padding: 0 20px 0; display: inline-block;}
-.logo img { width:80px; vertical-align: middle;}
+.logo { margin:0 0 0 20px; display: inline-block;}
+.logo img { width:220px; vertical-align: middle;}
 .menu_main { padding: 14px 0; margin-top: 6px;}
 header .pull-right {float: right; margin-right: 20px; width: initial;}
 header ul.pull-right li a:after {bottom: -4px!important;}
@@ -378,6 +378,9 @@ nav a.button-collapse {
 
 
 @media only screen and (min-width: 320px) and (max-width: 992px) {
+	.logo img {width: 150px;}
+	.nav-wrapper .col.s3 { text-align:left!important; width: inherit!important;}
+	.nav-wrapper .button-collapse.right { padding: 5px 10px 0 0;}
 	header .col ul li a.active {color: #fff; background:#3f87f5;}
 	#banner-fade a.line {padding: 5px 20px; border-radius: 3px; line-height: 30px; font-size: 14px;}
 	.container-fluid, header .container-fluid .row { max-width:100%; width:100%;}

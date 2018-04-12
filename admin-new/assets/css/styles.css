@@ -261,7 +261,7 @@ p {
   
   
 /* style new */  
-.an-logo-link img { width:70px;}
+.an-logo-link img { width:150px;}
 button i.icon-list {font-size: 41px;}
 .list-user-single img { width:40px;}
 .dasboard_list a:hover { background:#f9f9f9; display:inherit;}
@@ -1470,7 +1470,7 @@ input[type="button"].btn-block {
     .an-topbar-left-part .an-form {
       display: none; } }
   .an-topbar-left-part .toggle-button {
-    margin-left: 75px; }
+    margin-left: 30px; }
   .an-topbar-left-part .an-search-field {
     width: 300px;
     margin-left: 75px; }
