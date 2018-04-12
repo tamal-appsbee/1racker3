@@ -202,7 +202,7 @@ footer .container-fluid { box-shadow:none;}
 .we_care_main.features_sec_main {border-bottom:1px solid #f8f8f8;}
 .we_care_main.features_sec_main img { width: 250px; margin-left: auto; margin-right: auto; float: none;	display: inherit;}
 
-.how_to_get .content_part { padding:80px 40px 0; position:relative; width: 100%;}
+.how_to_get .content_part { padding:80px 40px 0; position:relative; width: 100%; display:flex;}
 .how_to_get .content_part .s4 {padding:0 15px;}
 .app_img img { width:300px; float: none; margin: 130px 0 0 100px;}
 .how_to_get .content_part img { width:300px;}
@@ -378,6 +378,7 @@ nav a.button-collapse {
 
 
 @media only screen and (min-width: 320px) and (max-width: 992px) {
+	.how_to_get .content_part { display:inherit;}
 	.logo img {width: 150px;}
 	.nav-wrapper .col.s3 { text-align:left!important; width: inherit!important;}
 	.nav-wrapper .button-collapse.right { padding: 5px 10px 0 0;}
