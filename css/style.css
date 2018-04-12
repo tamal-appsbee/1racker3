@@ -378,6 +378,7 @@ nav a.button-collapse {
 
 
 @media only screen and (min-width: 320px) and (max-width: 992px) {
+	#transcroller-body {padding-top: 50px;}
 	.how_to_get .content_part { display:inherit;}
 	.logo img {width: 150px;}
 	.nav-wrapper .col.s3 { text-align:left!important; width: inherit!important;}
@@ -423,6 +424,7 @@ nav a.button-collapse {
 }
 
 @media only screen and (min-width: 993px) and (max-width: 1199px) {
+	#transcroller-body {padding-top: 50px;}
 	.container-fluid, header .container-fluid .row { max-width:100%; width:100%;}
 	.map_img_sec h2 {font-size: 30px; line-height: 36px;}
 	.map_img_sec {height: 470px;}
